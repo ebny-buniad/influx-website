@@ -314,11 +314,11 @@ input:focus {
   transition: .3s;
 }
 
-.learn-more-btn:hover{
+.learn-more-btn:hover {
   color: #f47a20;
 }
 
-.title-img{
+.title-img {
   width: 100px !important;
 }
 
@@ -421,6 +421,41 @@ input:focus {
 /* ====== Hero End ======= */
 
 /* ====== Product Categories Start ======== */
+
+
+.titlebox span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  line-height: 1px;
+  padding: .125em .375em;
+}
+
+.titlebox::before,
+.titlebox::after {
+  content: "";
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(45%, rgba(0, 0, 0, 0)), color-stop(46%, rgb(157, 157, 157)), color-stop(54%, rgb(157, 157, 157)), color-stop(55%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+}
+
+.category-img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.view-products-btn{
+  position: absolute;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #404040;
+  border-radius: 3px;
+  color: #eee !important;
+}
+
 
 
 .product-categories-card img {
