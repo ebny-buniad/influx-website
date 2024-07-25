@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Influx Technology</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!-- EXTERNAL CSS LINK -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- OWL Carousel -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!------------------------------>
+    <!-- Header Start -->
+    <!------------------------------>
+    <header class="main-header position-fixed w-100">
+
+        <div class="container navbar-show-bg">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container p-0">
+                    <span><a class="navbar-brand" href="index.html"><img id="logo" src="asset/images/logo.svg"
+                                alt=""></a></span>
+                    <button class="navbar-toggler focus" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About<i class="ms-1 nav-drop-icon fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu mt-1 border-0 shadow-sm"
+                                    aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="company.html">Company</a></li>
+                                    <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
+                                    <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link" href="#" data-bs-toggle="dropdown">Products<i
+                                        class="ms-1 nav-drop-icon fa-solid fa-chevron-down"></i></a>
+                                <div class="dropdown-menu megamenu mt-1" role="menu">
+                                    <div class="row g-3">
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="col-megamenu">
+                                                <h6 class="product-category-title">Indoor</h6>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Ambient /
+                                                            Decorative</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Downlights</a>
+                                                    </li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Recessed
+                                                            Spotlights</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Batten</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Panels</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Recessed
+                                                            Modular</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Surface Wall &
+                                                            Ceiling</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Surface &
+                                                            Suspended</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Tracklights</a>
+                                                    </li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Free-standing</a>
+                                                    </li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Tracks</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Trunking</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Weatherproof</a>
+                                                    </li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Emergency</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Gizmo</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="col-megamenu">
+                                                <h6 class="product-category-title">Outdoor</h6>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Bollards</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Buried
+                                                            uplights</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Floodlights</a>
+                                                    </li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Wall & ceiling</a>
+                                                    </li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Decorative</a>
+                                                    </li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Solar</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Worklights</a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="col-megamenu">
+                                                <h6 class="product-category-title">Lamps</h6>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> LED</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> HID</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Fluorescent</a>
+                                                    </li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Compact
+                                                            fluorescent</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Halogen</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Incandescent</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="col-megamenu">
+                                                <h6 class="title">Lighting Controls</h6>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Modular Control
+                                                            Systems</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> Occupancy
+                                                            Sensors</a></li>
+                                                    <li><a href="#"><span class="arrow-icon">➝</span> SylSmart
+                                                            Components</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex mx-auto search-bar">
+                            <input class="focus border rounded-pill ps-3 pe-3" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn focus" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass focus"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header End  -->
+
+    <main class="flex-shrink-0">
+
+        <section class="">
+            <img class="company-page-bg" src="asset/images/others-pages/Screenshot 2024-07-14 115105.png" alt="">
+        </section>
+
+        <!-- About Us Content -->
+
+        <section class="container mt-3 mt-lg-5 pb-5">
+            <h2 class="display-5 border-bottom pb-2 fw-normal text-secondary">About Influx Technology</h2>
+            <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat esse laboriosam veniam nostrum odit sit
+                labore reprehenderit tenetur doloremque fugit magni libero, harum assumenda ipsum. Debitis doloribus
+                nulla nostrum possimus quisquam minus cupiditate voluptates illo ipsum iusto placeat ratione earum
+                deleniti assumenda sunt quae autem, rerum cumque nemo eum maxime inventore consequuntur. Labore iusto
+                illo possimus at doloremque quia, ipsa vel ratione cumque alias dolore a modi numquam consequatur esse,
+                harum voluptatibus eaque dolorem magni fuga ullam quis. Beatae voluptate similique consectetur nulla ea
+                placeat ipsa impedit voluptates temporibus illum amet, eveniet numquam. Quidem alias, dignissimos fugit
+                blanditiis est quos et id fuga minus perferendis doloremque molestias praesentium! Molestias maxime
+                consectetur reprehenderit mollitia quisquam aspernatur sint aliquam quibusdam est cupiditate voluptatum
+                at totam, quo adipisci. Iure blanditiis dignissimos nemo. Rem nulla id animi delectus sunt voluptate,
+                harum dolore, labore possimus dicta aut quaerat suscipit! Consectetur aliquid assumenda ipsam
+                voluptatibus sit! Hic vel exercitationem adipisci minus quia quisquam aut repudiandae numquam rem
+                reiciendis eveniet unde tenetur, minima nostrum autem fugit sit, itaque asperiores. Illo inventore,
+                veritatis nam ipsa itaque cum dolore nesciunt expedita reiciendis ab eligendi enim soluta culpa ad!
+                Consequatur repellendus optio laboriosam hic. Impedit itaque voluptatem, illum quaerat eaque maiores
+                eveniet error dolorem fugiat dolore, magni iusto nihil voluptatibus! Deserunt reiciendis repellat, atque
+                doloremque tempora consectetur sit, enim, odit temporibus veritatis quia exercitationem assumenda fugit.
+                Voluptate consequatur deleniti enim minus culpa nulla voluptates, laudantium, corrupti maxime facilis,
+                facere nemo ullam autem temporibus iste. Provident, quas architecto accusamus nisi, cupiditate optio
+                perspiciatis atque quaerat odit fugit cumque quo odio maxime porro. Obcaecati magni modi possimus
+                dolores culpa maxime quaerat, alias nostrum error earum voluptatibus dolore quas a debitis harum quam,
+                ratione delectus! Libero, sed ipsam? Quos pariatur aut provident quod non blanditiis voluptas molestiae.
+                Cupiditate autem quas esse, nulla accusamus nam. Neque perferendis, deserunt ullam corrupti modi aperiam
+                deleniti repellat dicta. Illo ducimus harum atque itaque sit in quaerat deleniti quo dicta optio nisi
+                accusamus, velit quisquam unde quia, aut reprehenderit facere veritatis earum, animi ab id. Porro
+                doloremque repellendus, ipsum beatae consequatur voluptatibus optio voluptas, in labore facilis et
+                debitis consequuntur molestiae dignissimos magni commodi eum eligendi. Cupiditate quis distinctio non
+                eaque quam voluptatem a voluptas natus officiis. Corporis debitis sapiente ipsa rem, reiciendis officia
+                animi at ut, aspernatur voluptates inventore eum excepturi. Doloribus error placeat neque ex temporibus
+                atque laboriosam ea expedita vel alias, consequatur labore repellendus eaque quaerat itaque corporis
+                iure nostrum consectetur molestiae fugiat dolore! Enim magnam a eos voluptatibus molestiae
+                exercitationem alias voluptatum, cumque est? Nisi voluptas aperiam accusantium eligendi praesentium nemo
+                alias earum minus ducimus sint distinctio exercitationem maiores assumenda, recusandae aspernatur
+                ratione itaque expedita animi reprehenderit quaerat necessitatibus. Modi excepturi molestias recusandae
+                repellendus tenetur rerum fuga ullam voluptatibus, debitis dolorum, at hic eaque omnis! Assumenda ipsam
+                delectus iusto odit optio nihil molestias? Explicabo nostrum eligendi incidunt tempore officia corporis
+                quia voluptatibus repellendus alias maxime, ullam labore odio perspiciatis, magnam consequatur iste nisi
+                animi doloribus iusto iure architecto magni. Adipisci tenetur placeat vitae ratione?</p>
+        </section>
+
+
+    </main>
+
+    <!-----Footer Start------------->
+
+
+    <footer class="footer mt-auto py-3 bg-light pt-5 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-2">
+                    <div class="footer-logo-col">
+                        <a href="#"><img class="w-50" src="asset/images/logo.svg"></a>
+                        <div class="mt-5">
+                            <p>Follow us</p>
+                            <div class="d-flex ">
+                                <div class="icon-box"><a href=""><i
+                                            class="fa-brands fa-linkedin-in social-icon"></i></a></div>
+                                <div class="icon-box"><a href=""><i class="fa-brands fa-x-twitter social-icon"></i></a>
+                                </div>
+                                <div class="icon-box"><a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 mt-3">
+                    <h6 class="">Company</h6>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="about-us.html">About Company</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="mission-vision.html">Mission & Vision</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 mt-3">
+                    <h6 class="">Products</h6>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="#">Indoor</a></li>
+                        <li><a href="#">Outdoor</a></li>
+                        <li><a href="#">Lamps</a></li>
+                        <li><a href="#">Lighting Controls</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <h6 class="">Useful Links</h6>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="#">Buy our products</a></li>
+                        <li><a href="terms-and-privacy.html">Terms & Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights text-center blue-light mt-3 pb-3">@ <span id="autodate"></span> - Influx Technology
+            Limited</div>
+        <div class="text-center">
+            <p>Design & Develop By - <br> <a target="_blank" href="https://www.ositsltd.com/"> <img
+                        style="width: 50px; margin-right: 5px;"
+                        src="https://www.ositsltd.com/media/logo/logo_K6FFJzc.png" alt=""> OS IT Solutions Ltd.</a></p>
+        </div>
+    </footer>
+
+
+    <!-------Footer End------------->
+
+    <!-- JS EXTERNAL & INTERNAL LINK -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./asset/js/app.js"></script>
+    <script src="./asset/js/main.js"></script>
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?32129';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled": true,
+            "chatButtonSetting": {
+                "backgroundColor": "#0a5f54",
+                "ctaText": "",
+                "borderRadius": "25",
+                "marginLeft": "15",
+                "marginBottom": "30",
+                "marginRight": "20",
+                "position": "right"
+            },
+            "brandSetting": {
+                "brandName": "Influx Technology Limited",
+                "brandSubTitle": "An Electronics Products Manufacturing Company",
+                "brandImg": "asset/images/logo.svg",
+                "welcomeText": "Hi there!\nWelcome to Influx Technology Ltd.\nHow can I help you?",
+                "messageText": "",
+                "backgroundColor": "#0a5f54",
+                "ctaText": "Start Chat",
+                "borderRadius": "",
+                "autoShow": false,
+                "phoneNumber": "8801729261041"
+            }
+        };
+        s.onload = function () {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
+</body>
+
+</html>
