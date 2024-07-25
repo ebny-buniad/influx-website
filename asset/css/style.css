@@ -447,12 +447,25 @@ input:focus {
 }
 
 .view-products-btn {
-  position: absolute;
-  right: 10px;
   padding: 10px 20px;
   background-color: #404040;
   border-radius: 3px;
   color: #eee !important;
+}
+
+@media (min-width:1440px) {
+  .category-card-footer {
+    display: flex;
+  }
+
+  .view-products-btn {
+    position: absolute;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #404040;
+    border-radius: 3px;
+    color: #eee !important;
+  }
 }
 
 .light-types-img {
@@ -487,16 +500,15 @@ input:focus {
 }
 
 .subscribe-bg {
-  background: rgba(10, 10, 10, 0.750) url(../images/subs-bg.jpg);
+  background: url(../images/subs-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   max-width: 100%;
   height: 50vh;
-  background-blend-mode: darken;
 }
 
-.subs-title{
+.subs-title {
   font-family: "Kufam", sans-serif !important;
   color: #ffffff;
   text-align: center;
@@ -505,12 +517,26 @@ input:focus {
   font-weight: 600;
 }
 
-.src-box{
-  width: ;
-  padding: 10px;
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
 }
 
+input[type="email"] {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
 
+.subscribe-btn {
+  background-color: #f47a20;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+}
 
 
 
@@ -748,9 +774,11 @@ input[type=number] {
 
 
 /* ====== Footer Start ======== */
-.footer-logo{
+.footer-logo {
   width: 150px;
+  padding-bottom: 50px;
 }
+
 footer a {
   color: #111;
   font-size: 13px;
