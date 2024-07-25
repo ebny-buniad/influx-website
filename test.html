@@ -1,39 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Centered HR with H2 Tag</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-
-   
-
-    .titlebox span {
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 1.5em;
-      font-weight: bold;
-      font-family: Verdana, sans-serif;
-      white-space: nowrap;
-      line-height: 1px;
-      padding: .125em .375em;
+    body,
+    * {
+      box-sizing: border-box;
     }
 
-    .titlebox::before,
-    .titlebox::after {
-      content: "";
-      display: table-cell;
-      width: 50%;
-      vertical-align: middle;
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(45%, rgba(0, 0, 0, 0)), color-stop(46%, rgb(157, 157, 157)), color-stop(54%, rgb(157, 157, 157)), color-stop(55%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    .bg-image {
+      background-image: url("./asset/images/subs-bg.jpg");
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      font-weight: bold;
+      border: 1px solid #f1f1f1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <div class="titlebox"><span>Lines Beside Title</span></div>
+
+  <div class="bg-image"></div>
+
+  <div class="bg-text">
+    <h2>Blurred Background</h2>
+    <h1 style="font-size:50px">I am John Doe</h1>
+    <p>And I'm a Photographer</p>
+  </div>
+
 </body>
 
 </html>

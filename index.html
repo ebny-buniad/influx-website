@@ -22,6 +22,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- OWL Carousel -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
@@ -42,7 +48,7 @@
     <!------------------------------>
     <header class="main-header position-fixed w-100">
 
-        <div class="container navbar-show-bg">
+        <div class="navbar-show-bg">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container p-0">
                     <span><a class="navbar-brand" href="index.html"><img id="logo" src="asset/images/logo.svg"
@@ -96,8 +102,8 @@
         <!-- Hero Section Start -->
 
         <section class="overflow-hidden">
-            <div class="carousel container">
-                <div class="list">
+            <div class="carousel">
+                <div class="container list">
                     <div class="item">
                         <img src="asset/images/hero/pexels-heyho-6794967.jpg">
                         <div class="overlay">
@@ -170,11 +176,15 @@
         <!-- Hero Section Start -->
 
 
-        <!-- Featured Product Showcase Start -->
+        <!-- Product Showcase Start -->
 
         <section>
-            <div class="container bg-light p-lg-5 p-3">
-                <div class="titlebox pt-lg-5 pt-3 pb-5"><span><h2 style="line-height: 1px;">EXPLORE BY CATEGORIES</h2></span></div>
+
+            <!-- Category Products -->
+            <div class="container">
+                <div class="titlebox pt-lg-5 pt-3 pb-5"><span>
+                        <h2 style="line-height: 1px;">EXPLORE BY CATEGORIES</h2>
+                    </span></div>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
@@ -185,7 +195,8 @@
                                     <p>Highlight Your Style</p>
                                 </div>
                                 <div>
-                                    <a class="view-products-btn text-white" href=""><span class="text-white">View Products</span></a>
+                                    <a class="view-products-btn text-white" href=""><span class="text-white">View
+                                            Products</span></a>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +210,8 @@
                                     <p>Mordern & Classic Design</p>
                                 </div>
                                 <div>
-                                    <a class="view-products-btn text-white" href=""><span class="text-white">View Products</span></a>
+                                    <a class="view-products-btn text-white" href=""><span class="text-white">View
+                                            Products</span></a>
                                 </div>
                             </div>
                         </div>
@@ -213,95 +225,225 @@
                                     <p>Make a Bold Statement</p>
                                 </div>
                                 <div>
-                                    <a class="view-products-btn text-white" href=""><span class="text-white">View Products</span></a>
+                                    <a class="view-products-btn text-white" href=""><span class="text-white">View
+                                            Products</span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+                </div>
+            </div>
+
+
+            <!-- Types Products -->
+            <div class="container pt-5">
+                <h5 class="pb-3">EXPLORE BY TYPES</h5>
+
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/1.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">PANEL LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/2.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">DOWN LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/3.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">SPOT LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/4.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">FLOOD LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/5.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">SPIKE LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/6.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">BULKHEAD LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/7.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">GROUND LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/8.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">STAIRS LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/9.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">EMERGENCY EXIT LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/10.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">FLAME PROOF LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/11.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">STREET LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="asset/images/home/light-types/12.jpg" class="light-types-img" alt="...">
+                                <div class="card-footer bg-white text-center text-dark border-0">
+                                    <h5 class="pt-3">HIGH BAY LIGHT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Support Section -->
+
+            <div class="container pt-5">
+                <div class="titlebox pb-5"><span>
+                        <h2 style="line-height: .2px;">NEED SUPPORT</h2>
+                    </span></div>
+
+                <div class="text-center bg-light support-section">
+                    <div class="row">
+                        <div class="col-12 col-md-4 p-3">
+                            <i class="fa-regular fa-clock support-sec-icon"></i>
+                            <p class="h6">OUR OPENING HOUR</p>
+                            <p>SATURDAY TO THURSDAY <br> (09:00 AM - 06:00 PM)</p>
+                            <p></p>
+                        </div>
+                        <div class="col-12 col-md-4 p-3">
+                            <i class="fa-solid fa-envelope support-sec-icon"></i>
+                            <p class="h6">EMAIL</p>
+                            <p>info@influxbn.com</p>
+                        </div>
+                        <div class="col-12 col-md-4 p-3">
+                            <i class="fa-solid fa-phone support-sec-icon"></i>
+                            <p class="h6">PHONE</p>
+                            <p>+88 01711-293193</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Section -->
+            <div class="container bg-white p-lg-5 p-3">
+                <div class="titlebox pb-5"><span>
+                        <h2 style="line-height: 1px;">OUR CUSTOMERS</h2>
+                    </span></div>
+
+                <div class="owl-carousel owl-theme">
+                    <div class="clients-item">
+                        <img src="asset/images/home/clients-logo/1.png" alt="">
+                    </div>
+                    <div class="clients-item">
+                        <img src="asset/images/home/clients-logo/2.png" alt="">
+                    </div>
+                    <div class="clients-item">
+                        <img src="asset/images/home/clients-logo/3.png" alt="">
+                    </div>
+                    <div class="clients-item">
+                        <img src="asset/images/home/clients-logo/4.png" alt="">
+                    </div>
+                    <div class="clients-item">
+                        <img src="asset/images/home/clients-logo/5.png" alt="">
+                    </div>
+                    <div class="clients-item">
+                        <img src="asset/images/home/clients-logo/6.png" alt="">
+                    </div>
+                    <div class="clients-item">
+                        <img src="asset/images/home/clients-logo/7.png" alt="">
+                    </div>
+                    <div class="clients-item">
+                        <img src="asset/images/home/clients-logo/8.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subscribe section -->
+            <div class="">
+                <div class="subscribe-bg">
+                    <h1 class="subs-title">Get the latest update</h1>
+                    <div class="d-flex justify-content-center">
+                        <form class="example bg-white" action="">
+                            <div>
+                                <input class="src-box" type="text" placeholder="Search.." name="search">
+                                <button class="" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
 
-
-        <section>
-            <div class="container bg-light mt-lg-5 mt-3">
-                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4 pb-lg-5 pb-5">
-                    <div class="col">
-                        <a class="product-categories-card" href="#">
-                            <div class="card h-100 border-0 bg-light">
-                                <img src="asset/images/home/categories-img-1.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <button class="text-move" data-hover="→">
-                                        <div>Pendant</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class="product-categories-card" href="#">
-                            <div class="card h-100 border-0 bg-light">
-                                <img src="asset/images/home/categories-img-2.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <button class="text-move" data-hover="→">
-                                        <div>Floor Lamps</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class="product-categories-card" href="#">
-                            <div class="card h-100 border-0 bg-light">
-                                <img src="asset/images/home/categories-img-3.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <button class="text-move" data-hover="→">
-                                        <div>Table Lamps</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class="product-categories-card" href="#">
-                            <div class="card h-100 border-0 bg-light">
-                                <img src="asset/images/home/categories-img-4.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <button class="text-move" data-hover="→">
-                                        <div>Wall Lamps</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class="product-categories-card" href="#">
-                            <div class="card h-100 border-0 bg-light">
-                                <img src="asset/images/home/categories-img-5.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <button class="text-move" data-hover="→">
-                                        <div>Home Accent</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class="product-categories-card" href="#">
-                            <div class="card h-100 border-0 bg-light">
-                                <img src="asset/images/home/categories-img-6.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <button class="text-move" data-hover="→">
-                                        <div>Chandaliers</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Product Showcase End -->
 
 
 
@@ -314,7 +456,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form class="example" action="action_page.php">
+                        <form class="example" action="">
                             <div>
                                 <input class="search-bar" type="text" placeholder="Search.." name="search">
                                 <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
@@ -333,47 +475,52 @@
 
     <footer class="footer mt-auto py-3 bg-light pt-5 pb-2">
         <div class="container">
-            <div class="row">
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-2">
+            <a href="#"><img class="footer-logo" src="asset/images/logo.svg"></a>
+            <p class="">Follow us</p>
+            <div class="d-flex ">
+                <div class="icon-box"><a href=""><i class="fa-brands fa-linkedin-in social-icon"></i></a></div>
+                <div class="icon-box"><a href=""><i class="fa-brands fa-x-twitter social-icon"></i></a>
+                </div>
+                <div class="icon-box"><a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 col-md-3">
                     <div class="footer-logo-col">
-                        <a href="#"><img class="w-50" src="asset/images/logo.svg"></a>
-                        <div class="mt-5">
-                            <p>Follow us</p>
-                            <div class="d-flex ">
-                                <div class="icon-box"><a href=""><i
-                                            class="fa-brands fa-linkedin-in social-icon"></i></a></div>
-                                <div class="icon-box"><a href=""><i class="fa-brands fa-x-twitter social-icon"></i></a>
-                                </div>
-                                <div class="icon-box"><a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        <h6 class="pb-2">Careers</h6>
+                        <ul class="list-unstyled mb-0 pl-0">
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Terms of Sale</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Applicant Privacy Policy</a></li>
+                            <li><a href="#">Website Terms and Conditions</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 mt-3">
-                    <h6 class="">Company</h6>
+                <div class="col-12 col-md-3">
+                    <h6 class="">Support</h6>
                     <ul class="list-unstyled mb-0 pl-0">
-                        <li><a href="about-us.html">About Company</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="mission-vision.html">Mission & Vision</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Catalogue</a></li>
+                        <li><a href="#">Warranty and Returns</a></li>
+                        <li><a href="#">Technical Downloads</a></li>
+                        <li><a href="#">Technical Assistance</a></li>
                     </ul>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 mt-3">
-                    <h6 class="">Products</h6>
+                <div class="col-12 col-md-3">
+                    <h6 class="">Tools</h6>
                     <ul class="list-unstyled mb-0 pl-0">
-                        <li><a href="#">Indoor</a></li>
-                        <li><a href="#">Outdoor</a></li>
-                        <li><a href="#">Lamps</a></li>
-                        <li><a href="#">Lighting Controls</a></li>
+                        <li><a href="#">Down-light Selector</a></li>
+                        <li><a href="#">Track Configurator</a></li>
+                        <li><a href="#">Driver Calculator</a></li>
                     </ul>
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
-                    <h6 class="">Useful Links</h6>
+                <div class="col-12 col-md-3">
+                    <h6 class="">Contact</h6>
                     <ul class="list-unstyled mb-0 pl-0">
-                        <li><a href="#">Buy our products</a></li>
-                        <li><a href="terms-and-privacy.html">Terms & Privacy</a></li>
+                        <li><a href="#">Where to Buy</a></li>
+                        <li><a href="#">Get in Touch</a></li>
                     </ul>
                 </div>
             </div>
