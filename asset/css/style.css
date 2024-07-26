@@ -116,7 +116,7 @@ li>a:hover {
 
 @media (max-width: 1000px) {
   .navbar-show-bg {
-    border-radius: 10px;
+    padding: 0px 10px;
   }
 }
 
@@ -245,20 +245,8 @@ input:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, rgba(0, 0, 0, 12), rgba(0, 0, 0, 0));
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .carousel {
   height: 100vh;
@@ -280,18 +268,62 @@ input:focus {
   object-fit: cover;
 }
 
-.carousel .list .item .content {
-  font-size: 0px !important;
-  position: absolute;
-  top: 25%;
-  width: 1140px;
-  max-width: 80%;
-  left: 46%;
-  transform: translateX(-50%);
-  padding-right: 30%;
-  box-sizing: border-box;
+
+.hero-content-box {
   color: #ffffff;
 }
+
+.hero-title {
+  font-family: "Kufam", sans-serif !important;
+}
+
+@media(max-width: 768px) {
+  .hero-content-box {
+    padding-top: 150px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .hero-content-box {
+    padding-top: 150px;
+    padding-left: 50px !important;
+  }
+}
+
+@media(min-width: 1440px) {
+  .hero-content-box {
+    padding-top: 200px;
+    padding-left: 100px !important;
+  }
+
+  .hero-title {
+    font-size: 60px;
+  }
+}
+
+.arrow-btn {
+  padding: 11px 18px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border: 0px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.48);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .page-title {
@@ -363,10 +395,8 @@ input:focus {
 .thumbnail {
   position: absolute;
   bottom: 25px;
-  width: max-content;
   display: flex;
   align-items: center;
-  left: 32%;
   gap: 20px;
 }
 
@@ -388,6 +418,22 @@ input:focus {
   object-fit: cover;
 }
 
+@media(max-width: 576px) {
+  .thumbnail{
+    gap: 10px;
+  }
+  .thumbnail .item {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .arrow-btn {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}
 
 /* arrows */
 .arrows {
@@ -538,236 +584,92 @@ input[type="email"] {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.product-categories-card img {
-  width: 120px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin: auto;
-  display: block;
-}
-
-.product-categories-card {
-  opacity: 0.6;
-  transition: 0.3s;
-  filter: grayscale(100%);
-  text-decoration: none;
-}
-
-.product-categories-card:hover {
-  opacity: 5;
-  transition: 0.3s;
-  filter: grayscale(0);
-}
-
-
-.text-move:hover {
-  cursor: pointer
-}
-
-.text-move {
-  margin: auto;
-  display: block;
-  background: transparent;
-  outline: none;
-  position: relative;
-  border: 1px solid #111;
-  border-radius: 3px;
-  padding: 10px 25px;
-  overflow: hidden;
-}
-
-/*button:before (attr data-hover)*/
-.text-move:hover:before {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-.text-move:before {
-  content: attr(data-hover);
-  position: absolute;
-  top: 3px;
-  left: 0;
-  width: 100%;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 800;
-  font-size: 20px;
-  opacity: 0;
-  transform: translate(-100%, 0);
-  transition: all .3s ease-in-out;
-}
-
-/*button div (button text before hover)*/
-.text-move:hover div {
-  opacity: 0;
-  transform: translate(100%, 0)
-}
-
-.text-move div {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 800;
-  font-size: .8em;
-  transition: all .3s ease-in-out;
-}
-
-
 /* ====== Product Categories End ======== */
 
 
-/* ====== Shopping Section Start ======== */
-.sell-product-card {
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
-  border: 1px solid rgb(189, 189, 189) !important;
-  border-radius: 10px;
-}
-
-.product-img {
-  border-top-left-radius: 10px !important;
-  border-top-right-radius: 10px !important;
-}
-
-.product-name {
-  padding: 5px 0px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.shop-now-footer {
-  border-bottom-left-radius: 10px !important;
-  border-bottom-right-radius: 10px !important;
-}
-
-.card-footer a {
-  text-decoration: none;
-}
-
-/* ====== Shopping Section End ======== */
-
-
-/* ====== Company Page Start ========== */
-
-.company-page-bg {
-  width: 93.53%;
-  margin: auto;
-  display: block;
-  border-radius: 10px;
-}
-
-/* ====== Company Page End ========== */
 
 
 
+/* ===================================================================================================================== */
+
+/* Compnay Page Start */
+
+
+/* Compnay Page End */
+
+
+/* ===================================================================================================================== */
+
+
+
+/* ===================================================================================================================== */
+
+/* Products Page Start */
+
+
+/* Products Page End */
+
+
+/* ===================================================================================================================== */
+
+
+/* ===================================================================================================================== */
+
+/* Inspiaration Page Start */
+
+
+/* Inspiaration Page End */
+
+
+/* ===================================================================================================================== */
+
+
+/* ===================================================================================================================== */
+
+/* Application Page Start */
+
+
+/* Application Page End */
+
+
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+
+/* News Page Start */
+
+
+/* News Page End */
+
+
+/* ===================================================================================================================== */
+
+
+/* ===================================================================================================================== */
+
+/* Service Page Start */
+
+
+/* Service Page End */
+
+
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+
+/* Contact Page Start */
+
+
+/* Contact Page End */
+
+
+/* ===================================================================================================================== */
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* ====== News Start ===== */
-
-.news-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.card-footer a {
-  color: #000 !important;
-  font-size: 14px;
-  transition: .3s;
-}
-
-.card-footer a:hover {
-  color: #f1683a !important;
-}
-
-/* ====== News End ===== */
-
-
-
-
-/* ====== Contact Page Start ======= */
-@media(max-width: 576px) {
-
-  .contact-bg,
-  .company-page-bg {
-    margin-top: 70px;
-  }
-}
-
-@media(min-width: 1440px) {
-  .contact-bg {
-    height: 100vh;
-    object-fit: cover;
-  }
-}
-
-.contact h3 {
-  text-align: center;
-  font-weight: 400;
-  color: #7e7e7e;
-  font-size: 40px;
-
-  .fa-arrow-up-right-from-square {
-    font-size: 23px;
-  }
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-
-.btn-submit {
-  background-color: #203242;
-  padding: 10px 30px;
-  border-radius: 4px;
-  border: 0px;
-  color: white;
-  transition: .3s;
-  font-weight: 500;
-}
-
-.btn-submit:hover {
-  background-color: #ffa361;
-  color: #000;
-}
-
-.contact-icon {
-  color: #f47a20;
-}
-
-/* ====== Contact Page End ======= */
 
 
 
