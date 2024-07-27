@@ -1,0 +1,68 @@
+
+
+.heroWrapper {
+    background: url(../images/hero-images/inspirations.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+/* .heroTitleWrapper{
+
+} */
+
+.searchOptions{
+    /* max-width: 170px; */
+    color: white;
+    background: rgba(255, 255, 255, 0.237);
+    outline: none;
+    border-bottom: 2px solid var(--custom-orange-color);
+}
+
+  /* contents */
+
+/* .contentWrapper{
+    width: 95%;
+} */
+
+.eachInspirations{
+    max-width: 400px;
+
+    aspect-ratio: 3/2;
+}
+.eachInspirationsWrapper{
+    height: 100%;
+    background: rgba(0, 0, 0, 0.426);
+    gap: 5rem;
+}
+.backgroundImageAdjust{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.eachInspirationsWrapper h2{
+    font-weight: 500;
+}
+.eachInspirationsWrapper p,span{
+    font-size: 0.8rem;
+}
+
+
+.visitBtn{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    background: rgba(255, 255, 255, 0.237);
+}
+
+.jan{
+    left: 0%;
+}
+  
+
+  
+  
+  
