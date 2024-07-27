@@ -684,10 +684,14 @@ input[type="email"] {
   padding-bottom: 50px;
 }
 
+footer ul li {
+  padding-bottom: 10px;
+}
+
 footer a {
-  color: #111;
+  color: #969696 !important;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   transition: .3s;
 }
 
