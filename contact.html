@@ -38,109 +38,48 @@
 
 <body class="d-flex flex-column h-100">
     <!-- Header Start -->
-    <header class="main-header position-fixed w-100">
+    <header class="main-header position-fixed top-0 w-100" >
 
         <div class="container navbar-show-bg">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container p-0">
-                    <span><a class="navbar-brand" href="index.html"><img id="logo" src="asset/images/logo.svg" alt=""></a></span>
+                    <span><a class="navbar-brand" href="index.html"><img id="logo" src="asset/images/logo.svg"
+                                alt=""></a></span>
                     <button class="navbar-toggler focus" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav mx-auto">
+                        <ul class="navbar-nav mx-aut">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown has-megamenu">
-                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    About<i class="ms-1 nav-drop-icon fa-solid fa-chevron-down"></i>
-                                </a>
-                                <ul class="dropdown-menu mt-1 border-0 shadow-sm"
-                                    aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="about-us.html">Company</a></li>
-                                    <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
-                                    <li><a class="dropdown-item" href="team.html">Team</a></li>
-                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown has-megamenu">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown">Products<i
-                                        class="ms-1 nav-drop-icon fa-solid fa-chevron-down"></i></a>
-                                <div class="dropdown-menu megamenu mt-1" role="menu">
-                                    <div class="row g-3">
-                                        <div class="col-lg-3 col-md-6 col-12">
-                                            <div class="col-megamenu">
-                                                <h6 class="title">Indoor</h6>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-12">
-                                            <div class="col-megamenu">
-                                                <h6 class="title">Outdoor</h6>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-12">
-                                            <div class="col-megamenu">
-                                                <h6 class="title">Lamps</h6>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-12">
-                                            <div class="col-megamenu">
-                                                <h6 class="title">Lighting Controls</h6>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a class="nav-link active" aria-current="page" href="./company.html">COMPANY</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="news.html">News</a>
+                                <a class="nav-link" href="#">PRODUCTS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="./inspirations.html">INSPIARATIONS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./applications.html">APPLICATIONS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./news.html">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./services.html">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT</a>
                             </li>
 
                         </ul>
-                        <form class="d-flex mx-auto search-bar">
-                            <input class="focus border rounded-pill ps-3 pe-3" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <button class="btn focus" type="submit"><i
-                                    class="fa-solid fa-magnifying-glass focus"></i></button>
-                        </form>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
                     </div>
                 </div>
             </nav>

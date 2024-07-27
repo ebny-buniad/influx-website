@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News - Influx Technology</title>
+    <title>News</title>
+    <script src="./asset/js/common.js" defer></script>
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/common.css" />
+    <link rel="stylesheet" href="./asset/css/news.css" />
+    
 
     <!-- EXTERNAL CSS LINK -->
     <!-- Bootstrap CSS -->
@@ -37,179 +41,267 @@
 </head>
 
 <body class="d-flex flex-column h-100">
+    <!------------------------------>
     <!-- Header Start -->
-    <header class="main-header position-fixed w-100">
+    <!------------------------------>
+    <header class="main-header position-fixed top-0 w-100" >
 
         <div class="container navbar-show-bg">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container p-0">
-                    <span><a class="navbar-brand" href="index.html"><img id="logo" src="asset/images/logo.svg" alt=""></a></span>
+                    <span><a class="navbar-brand" href="index.html"><img id="logo" src="asset/images/logo.svg"
+                                alt=""></a></span>
                     <button class="navbar-toggler focus" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav mx-auto">
+                        <ul class="navbar-nav mx-aut">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown has-megamenu">
-                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    About<i class="ms-1 nav-drop-icon fa-solid fa-chevron-down"></i>
-                                </a>
-                                <ul class="dropdown-menu mt-1 border-0 shadow-sm"
-                                    aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="about-us.html">Company</a></li>
-                                    <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
-                                    <li><a class="dropdown-item" href="team.html">Team</a></li>
-                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown has-megamenu">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown">Products<i
-                                        class="ms-1 nav-drop-icon fa-solid fa-chevron-down"></i></a>
-                                <div class="dropdown-menu megamenu mt-1" role="menu">
-                                    <div class="row g-3">
-                                        <div class="col-lg-3 col-md-6 col-12">
-                                            <div class="col-megamenu">
-                                                <h6 class="title">Indoor</h6>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-12">
-                                            <div class="col-megamenu">
-                                                <h6 class="title">Outdoor</h6>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-12">
-                                            <div class="col-megamenu">
-                                                <h6 class="title">Lamps</h6>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-12">
-                                            <div class="col-megamenu">
-                                                <h6 class="title">Lighting Controls</h6>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                    <li><a href="#">Custom Menu</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a class="nav-link active" aria-current="page" href="./company.html">COMPANY</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="news.html">News</a>
+                                <a class="nav-link" href="#">PRODUCTS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="./inspirations.html">INSPIARATIONS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./applications.html">APPLICATIONS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./news.html">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./services.html">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT</a>
                             </li>
 
                         </ul>
-                        <form class="d-flex mx-auto search-bar">
-                            <input class="focus border rounded-pill ps-3 pe-3" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <button class="btn focus" type="submit"><i
-                                    class="fa-solid fa-magnifying-glass focus"></i></button>
-                        </form>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
                     </div>
                 </div>
             </nav>
         </div>
     </header>
+
     <!-- Header End  -->
 
     <main class="flex-shrink-0">
 
-        <section class="container" style="margin-top: 150px;">
-            <h1 class="display-4 border-bottom pb-3">News</h1>
-        </section>
+      <!-- hero section -->
 
-        <!-- News Items -->
+      <section class="hero container-fluid p-0">
+        <div class="wrapper heroWrapper">
+          <div class="heroTitleWrapper w-100 h-100">
+            <div
+              class="my-3 mx-auto row flex-column align-items-end"
+              style="width: fit-content"
+            >
+              <h1 class="heroTitle">Latest News</h1>
+              <img
+                src="./asset/images/titleUnderline.svg"
+                alt=" "
+                class=""
+                style="width: 5.5rem"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="container mt-3 mt-lg-5 pb-3 pb-lg-5">
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="asset/images/news-img/63455aa596c5ce0d9c70b0a7-5pcs-100w-ufo-led-high-bay-light-lamp.jpg" class="news-img" alt="...">
-                    <div class="card-body p-2">
-                      <h5 class="card-title">Influx made new model flash light</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer border-0 pt-3 pb-3 ps-2 bg-white">
-                      <small class="text-muted"><a href="single-news.html">Read more <span>→</span></a></small>
-                    </div>
-                  </div>
+      <!-- contents section -->
+
+      <section class="contentSection container">
+        <div class="contentWrapper m-auto row justify-content-between">
+          <div class="news col-9">
+            <div class="newsWrapper row row-cols-1 row-cols-lg-2 gap-3">
+              <div class="eachNews row row-cols-1 gap-3 py-3">
+                <div class="">
+                  <img
+                    src="./asset/images/newsPageContent-images/0.jpg"
+                    alt="Lighting Management"
+                    class="newsImage"
+                  />
                 </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="asset/images/news-img/Interior_Warehouse-reduced-August-20194-1024x680.jpg" class="news-img" alt="...">
-                    <div class="card-body p-2">
-                      <h5 class="card-title">Influx made new model flash light</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer border-0 pt-3 pb-3 ps-2 bg-white">
-                      <small class="text-muted"><a href="single-news.html">Read more <span>→</span></a></small>
-                    </div>
+
+                <div class="row row-cols-1 gap-2">
+                  <h5>WORKING ON 450 NOS PUMP AUTOMATION FOR DWASA</h5>
+                  <div class="">
+                    <span class="summary">
+                      While you take care of your core business, we'll take care
+                      of the rest. Our passion is to create lighting solutions
+                      through accomplished perfection. Our human-centric
+                      approach is our belief. In this way, we turn light into an
+                      experience.
+                      
+                    </span>
+                    <a href="#" class="readMore">...read more</a>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="asset/images/news-img/467062298interior-lighting-designs-for-home.jpg" class="news-img" alt="...">
-                    <div class="card-body p-2">
-                      <h5 class="card-title">Influx made new model flash light</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer border-0 pt-3 pb-3 ps-2 bg-white">
-                      <small class="text-muted"><a href="single-news.html">Read more <span>→</span></a></small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="asset/images/news-img/interior_lighting_98539_bottom3.jpg" class="news-img" alt="...">
-                    <div class="card-body p-2">
-                      <h5 class="card-title">Interior Lighting Discover Now | EGLO</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer border-0 pt-3 pb-3 ps-2 bg-white">
-                      <small class="text-muted"><a href="single-news.html">Read more <span>→</span></a></small>
-                    </div>
-                  </div>
+                  <b>Date: 06/12/2024</b>
                 </div>
               </div>
-        </section>
 
-        <!-- News Items End -->
+              <div class="eachNews row row-cols-1 gap-3 py-3">
+                <div class="">
+                  <img
+                    src="./asset/images/newsPageContent-images/0.jpg"
+                    alt="Lighting Management"
+                    class="newsImage"
+                  />
+                </div>
+
+                <div class="row row-cols-1 gap-2">
+                  <h5>PRIZE RECEIVING FROM A21 AGAINST SEL-AMI</h5>
+                  <div class="">
+                    <span class="summary">
+                      While you take care of your core business, we'll take care
+                      of the rest. Our passion is to create lighting solutions
+                      through accomplished perfection. Our human-centric
+                      approach is our belief. In this way, we turn light into an
+                      experience.
+                      
+                    </span>
+                    <a href="#" class="readMore">...read more</a>
+                  </div>
+                  <b>Date: 06/12/2024</b>
+                </div>
+              </div>
+
+              <div class="eachNews row row-cols-1 gap-3 py-3">
+                <div class="">
+                  <img
+                    src="./asset/images/newsPageContent-images/2.jpg"
+                    alt="Lighting Management"
+                    class="newsImage"
+                  />
+                </div>
+
+                <div class="row row-cols-1 gap-2 eachNewsTitle">
+                  <h5>
+                    WELL FIELD CONSTRUCTION PROJECT AT TETULZHORA-BHAKURTA AREA
+                    OF SAVARUPAZILLA
+                  </h5>
+                  <div class="">
+                    <span class="summary">
+                      The Electrical Installation Contractor, herein referred to
+                      as the 'Contractor' within this section and all other
+                      sections of this specification shall carry out all
+                      electrical works complete in accordance with the
+                      requirements of the Contract Documents.
+                      
+                    </span>
+                    <a href="#" class="readMore">...read more</a>
+                  </div>
+                  <b>Date: 06/12/2024</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BROCHURES -->
+
+          <div class="col-3">
+            <div class="row row-cols-1 gap-1">
+              <div
+                class="row row-cols-2 justify-content-between border-bottom brochuresToggler"
+              >
+                <b>BROCHURES</b>
+                <img
+                  src="./asset/images/arrow.svg"
+                  alt="v"
+                  style="width: 35px"
+                  class="directionArrow directionArrowAnimation"
+                />
+              </div>
+
+              <div class="row row-cols-1 gap-2 brochures">
+                <a
+                  href="#"
+                  download
+                  class="row justify-content-between align-items-center flex-nowrap"
+                >
+                  <img
+                    src="./asset/images/pdf.svg"
+                    alt="pdf"
+                    class="brochuresPdf" style="width: 3rem;"
+                  />
+                  <span class="col-11 brochuresParagraph"
+                    >Added value through lighting Management (pdf/6.0 MB)</span
+                  >
+                </a>
+
+                <a
+                  href="#"
+                  download
+                  class="row justify-content-between align-items-center flex-nowrap"
+                >
+                  <img
+                    src="./asset/images/pdf.svg"
+                    alt="pdf"
+                    class="brochuresPdf" style="width: 3rem;"
+                  />
+                  <span class="col-11 brochuresParagraph"
+                    >Office lights (pdf/6.0 MB)</span
+                  >
+                </a>
+
+                <a
+                  href="#"
+                  download
+                  class="row justify-content-between align-items-center flex-nowrap"
+                >
+                  <img
+                    src="./asset/images/pdf.svg"
+                    alt="pdf"
+                    class="brochuresPdf" style="width: 3rem;"
+                  />
+                  <span class="col-11 brochuresParagraph"
+                    >Hotel lights(pdf/6.0 MB)</span
+                  >
+                </a>
+
+                <a
+                  href="#"
+                  download
+                  class="row justify-content-between align-items-center flex-nowrap"
+                >
+                  <img
+                    src="./asset/images/pdf.svg"
+                    alt="pdf"
+                    class="brochuresPdf" style="width: 3rem;"
+                  />
+                  <span class="col-11 brochuresParagraph"
+                    >Added value through lighting Management (pdf/6.0 MB)</span
+                  >
+                </a>
+
+                <a
+                  href="#"
+                  download
+                  class="row justify-content-between align-items-center flex-nowrap"
+                >
+                  <img
+                    src="./asset/images/pdf.svg"
+                    alt="pdf"
+                    class="brochuresPdf" style="width: 3rem;"
+                  />
+                  <span class="col-11 brochuresParagraph"
+                    >Added value through lighting Management (pdf/6.0 MB)</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
     </main>
@@ -276,11 +368,6 @@
 
     <!-------Footer End------------->
 
-
-
-    <script>
-    </script>
-
     <!-- JS EXTERNAL & INTERNAL LINK -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -294,6 +381,42 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./asset/js/app.js"></script>
     <script src="./asset/js/main.js"></script>
-
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?32129';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled": true,
+            "chatButtonSetting": {
+                "backgroundColor": "#0a5f54",
+                "ctaText": "",
+                "borderRadius": "25",
+                "marginLeft": "15",
+                "marginBottom": "30",
+                "marginRight": "20",
+                "position": "right"
+            },
+            "brandSetting": {
+                "brandName": "Influx Technology Limited",
+                "brandSubTitle": "An Electronics Products Manufacturing Company",
+                "brandImg": "asset/images/logo.svg",
+                "welcomeText": "Hi there!\nWelcome to Influx Technology Ltd.\nHow can I help you?",
+                "messageText": "",
+                "backgroundColor": "#0a5f54",
+                "ctaText": "Start Chat",
+                "borderRadius": "",
+                "autoShow": false,
+                "phoneNumber": "8801729261041"
+            }
+        };
+        s.onload = function () {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
+</body>
 
 </html>
