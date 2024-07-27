@@ -78,14 +78,22 @@ main section{
 
 .contentWrapper{
     text-align: justify;
-    width: 90%;
+    /* width: 90%; */
 }
 
-@media (min-width:768px) {
+@media (min-width:992px) {
     .contentWrapper{
         width: 85%;
     }
 }
+
+.eachContent{
+    border-bottom: 2px solid rgba(154, 154, 154, 0.361);
+  }
+  
+  .eachContent:last-child{
+    border-bottom: none;
+  }
 
 /* applicatons */
 
