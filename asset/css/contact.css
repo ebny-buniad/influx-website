@@ -18,20 +18,7 @@
         width: 90%;
     }
 }
-/* userform */
 
-form input,textarea{
-    background: transparent;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid gray;
-}
-input#email {
-    padding: 0%;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid gray;
-}
 
 /* adresses */
 

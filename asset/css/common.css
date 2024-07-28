@@ -1,129 +1,184 @@
-:root{
-    --custom-orange-color: rgba(225, 107, 38, 1);
-    
-
+:root {
+  --custom-orange-color: rgba(225, 107, 38, 1);
 }
-html{
-    box-sizing: border-box;
-    font-size: 100%;
-
+html {
+  box-sizing: border-box;
+  font-size: 100%;
 }
-*{
-    scroll-behavior: smooth;
-    box-sizing: inherit;
-
-
-
-    
+* {
+  scroll-behavior: smooth;
+  box-sizing: inherit;
 }
-.body{
-    font-size: 0.75rem !important;
-    background-color: white !important;
+.body {
+  font-size: 0.75rem !important;
+  background-color: white !important;
 }
 
-h1{
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 0%;
-    padding: 0%;
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0%;
+  padding: 0%;
 }
-h2{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0%;
-    padding: 0%;
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0%;
+  padding: 0%;
 }
-p,span{
-    color: rgba(119, 119, 119, 1);
-;
+p,
+span {
+  color: rgba(119, 119, 119, 1);
 }
-a{
-    text-decoration: none;
-    color: rgba(119, 119, 119, 1);
-;
+a {
+  text-decoration: none;
+  color: rgba(119, 119, 119, 1);
 }
 
-main section{
-    margin-bottom: 2rem;
+main section {
+  margin-bottom: 2rem;
 }
 
 /* hero */
 
-.heroWrapper{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.heroWrapper {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.heroTitleWrapper{
-    background: rgba(0, 0, 0, 0.567);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .heroTitle {
-    font-size: 50px !important;
-    font-weight: 600;
-    color: white;
-  
-  }
-
-
-  /* contents */
-
-.contentWrapper{
-    text-align: justify;
-    /* width: 90%; */
+.heroTitleWrapper {
+  background: rgba(0, 0, 0, 0.567);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heroTitle {
+  font-size: 50px !important;
+  font-weight: 600;
+  color: white;
 }
 
-@media (min-width:992px) {
-    .contentWrapper{
-        width: 85%;
-    }
+/* contents */
+
+.contentWrapper {
+  text-align: justify;
+  /* width: 90%; */
 }
 
-.eachContent{
-    border-bottom: 2px solid rgba(154, 154, 154, 0.361);
+@media (min-width: 992px) {
+  .contentWrapper {
+    width: 85%;
   }
-  
-  .eachContent:last-child{
-    border-bottom: none;
-  }
+}
+
+.eachContent {
+  border-bottom: 2px solid rgba(154, 154, 154, 0.361);
+}
+
+.eachContent:last-child {
+  border-bottom: none;
+}
 
 /* applicatons */
 
-.detailsToggler{
-    color: var(--custom-orange-color) !important;
-    cursor: pointer;
-
+.detailsToggler {
+  color: var(--custom-orange-color) !important;
+  cursor: pointer;
 }
 
+/* userform */
+
+form input,
+textarea {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+input#email {
+  padding: 0%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+}
 
 /* BROCHURES */
 
-/* .brochuresPdf{
+.brochuresParagraph {
+  /* font-size: 14px; */
+  text-align: justify;
+}
+
+.brochures {
+  transition: 0.8s;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.brochuresAnimation {
+  transform: scaleY(0);
+}
+.directionArrowAnimation {
+  transform: rotate(180deg);
+}
+
+button {
+  background: rgba(64, 64, 64, 1);
+}
+
+/* brochuresDownloadPanel */
+
+.brochuresPanel {
+  background: rgba(0, 0, 0, 0.507);
+  position: fixed;
+  width: 100svw;
+  height: 100svh;
+  overflow-y: auto;
+  top: 0%;
+  order: 100;
+}
+
+.brochuresPanelToggleAnimation {
+  display: none;
+}
+
+.brochuresPanelWrapper {
+  position: relative;
+  max-width: 32rem;
+  border-radius: 5px;
+  background: white;
+  top: 8rem;
+  margin: auto;
+}
+
+/* .brochuresPanelSocial {
 } */
-.brochuresParagraph{
-    /* font-size: 14px; */
-    text-align: justify;
+
+.brochuresPanelSocial:hover {
+  color: var(--custom-orange-color);
 }
 
-.brochures{
-    transition: 0.8s;
-    transform: scaleY(1);
-    transform-origin: top;
-
+.brochuresPanelSocialIcon {
+  margin: 0;
+  transition: 0.6s;
+  background: rgb(231, 231, 231);
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 100%;
 }
 
-.brochuresAnimation{
-    transform: scaleY(0);
-
+.brochuresPanelSocial:hover .brochuresPanelSocialIcon {
+  background: rgba(225, 107, 38, 0.158);
+  color: var(--custom-orange-color);
 }
-.directionArrowAnimation{
-    transform: rotate(180deg);
+.brochuresPanelSocial:hover .brochuresPanelSocialName {
+  transition: 0.6s;
+  color: var(--custom-orange-color);
 }
