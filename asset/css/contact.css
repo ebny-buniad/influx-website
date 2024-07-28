@@ -1,0 +1,45 @@
+.heroWrapper{
+    background: url(../images/hero-images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/* contents */
+
+.contentWrapper{
+    border-radius: 5px;
+    background: white;
+}
+
+@media (min-width:992px) {
+    .contentWrapper{
+        width: 90%;
+    }
+}
+/* userform */
+
+form input,textarea{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+input#email {
+    padding: 0%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+/* adresses */
+
+.addresses{
+    border-radius: 5px;
+    background: rgba(245, 245, 245, 1);
+}
+.map{
+    width: 100%;
+    aspect-ratio: 2/1;
+}
