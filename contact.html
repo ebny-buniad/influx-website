@@ -1,571 +1,440 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Influx Technology</title>
-    <link rel="stylesheet" href="asset/css/style.css" />
 
-    <link rel="stylesheet" href="./asset/css/common.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Influx Technology</title>
+  <link rel="stylesheet" href="asset/css/style.css" />
 
-        <!-- THIS CSS LINK HAVE TO BE DYNAMIC. IF THERE IS company.html IN THE PATHNAME, THEN HERE THIS LINK CONNECT TO company.css file
+  <link rel="stylesheet" href="./asset/css/common.css" />
+
+  <!-- THIS CSS LINK HAVE TO BE DYNAMIC. IF THERE IS company.html IN THE PATHNAME, THEN HERE THIS LINK CONNECT TO company.css file
       SO ACCOURDING TO PATHNAME IT CAN BE company.css, application.css, inspiration.css, news.css, service.css, faqs.css etc
     -->
-    <link rel="stylesheet" href="./asset/css/contact.css" />
+  <link rel="stylesheet" href="./asset/css/contact.css" />
 
-    <!-- EXTERNAL CSS LINK -->
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- EXTERNAL CSS LINK -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- OWL Carousel -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- AOS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- OWL Carousel -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
 
-  <body class="d-flex flex-column h-100">
-    <!------------------------------>
-    <!-- Header Start -->
-    <!------------------------------>
-    <header class="main-header position-fixed w-100">
-      <div class="navbar-show-bg">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container p-0">
-            <span
-              ><a class="navbar-brand" href="index.html"
-                ><img id="logo" src="asset/images/logo.svg" alt="" /></a
-            ></span>
-            <button
-              class="navbar-toggler focus"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
+<body class="d-flex flex-column h-100">
+  <!------------------------------>
+  <!-- Header Start -->
+  <!------------------------------>
+  <header class="main-header position-fixed w-100">
+    <div class="navbar-show-bg">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container p-0">
+          <span><a class="navbar-brand" href="index.html"><img id="logo" src="asset/images/logo.svg"
+                alt="" /></a></span>
+          <button class="navbar-toggler focus" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-aut">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="company.html">COMPANY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="inspiarations.html">INSPIARATIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="applications.html">APPLICATIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">SERVICE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="search-btn bg-light ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 rounded-0"
+              data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav mx-aut">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="company.html"
-                    >COMPANY</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">PRODUCTS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="inspiarations.html"
-                    >INSPIARATIONS</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="applications.html">APPLICATIONS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="news.html">NEWS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">SERVICE</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
-              </ul>
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="search-btn bg-light ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 rounded-0"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <i class="fa-solid fa-magnifying-glass"></i> Search
-              </button>
-            </div>
           </div>
-        </nav>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!------------------------------>
+  <!-- Header End  -->
+  <!------------------------------>
+
+  <main class="flex-shrink-0">
+    <!--  HEADER AND FOOTER COPY HERE -->
+
+    <!-- hero section -->
+
+    <section class="hero container-fluid p-0">
+      <div class="wrapper heroWrapper">
+        <div class="heroTitleWrapper w-100 h-100">
+          <div class="my-3 mx-auto row flex-column align-items-end" style="width: fit-content">
+            <h1 class="heroTitle">Contact Us</h1>
+            <img src="./asset/images/titleUnderline.svg" alt=" " class="" style="width: 5.5rem" />
+          </div>
+        </div>
       </div>
-    </header>
-    <!------------------------------>
-    <!-- Header End  -->
-    <!------------------------------>
+    </section>
 
-    <main class="flex-shrink-0">
-      <!--  HEADER AND FOOTER COPY HERE -->
+    <!-- contents section -->
 
-      <!-- hero section -->
+    <section class="contentSection container">
+      <div class="contentWrapper m-auto row row-cols-1 gap-3 p-lg-3 justify-content-between">
+        <div class="contactForm col-lg-6 py-4 px-lg-3">
+          <form action="#" method="post" class="d-flex flex-column gap-5">
+            <div class="userNames d-flex flex-wrap flex-sm-nowrap gap-5 justify-content-between">
+              <label for="firstName" class="d-flex flex-column gap-2 w-75">
+                First Name
+                <input type="text" name="firstName" id="firstName" class="" required />
+              </label>
 
-      <section class="hero container-fluid p-0">
-        <div class="wrapper heroWrapper">
-          <div class="heroTitleWrapper w-100 h-100">
-            <div
-              class="my-3 mx-auto row flex-column align-items-end"
-              style="width: fit-content"
-            >
-              <h1 class="heroTitle">Contact Us</h1>
-              <img
-                src="./asset/images/titleUnderline.svg"
-                alt=" "
-                class=""
-                style="width: 5.5rem"
-              />
+              <label for="lastName" class="d-flex flex-column gap-2 w-75">
+                Last Name
+                <input type="text" name="lastName" id="lastName" class="" required />
+              </label>
+            </div>
+
+            <div class="userContact d-flex flex-wrap flex-sm-nowrap gap-5 justify-content-between">
+              <label for="email" class="d-flex flex-column gap-2 w-75">
+                Email
+                <input type="email" name="email" id="email" class="userEmial" required />
+              </label>
+
+              <label for="phoneNumber" class="d-flex flex-column gap-2 w-75">
+                Phone Number
+                <input type="text" name="phoneNumber" id="phoneNumber" class="" required />
+              </label>
+            </div>
+
+            <div class="d-flex flex-column gap-3">
+              <label for="subject"><b>Select Subject?</b></label>
+
+              <div class="subjectOptions d-flex flex-wrap gap-4 justify-content-between">
+                <label class="d-flex gap-2">
+                  <input type="radio" name="subject" id="subject" required value="general inquiry" />
+                  General Inquiry
+                </label>
+
+                <label class="d-flex gap-2">
+                  <input type="radio" name="subject" id="subject" required value="product inquiry" />
+                  Product Inquiry
+                </label>
+
+                <label class="d-flex gap-2">
+                  <input type="radio" name="subject" id="subject" required value="project inquiry" />
+                  Project Inquiry
+                </label>
+
+                <label class="d-flex gap-2">
+                  <input type="radio" name="subject" id="subject" required value="technical inquiry" />
+                  Technical Inquiry
+                </label>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column gap-3">
+              <label for="message"> Message </label>
+
+              <textarea name="message" id="message" rows="1" placeholder="Write your message . . ." required
+                class="py-2"></textarea>
+            </div>
+
+            <button type="submit" class="btn text-white px-4 py-2 m-auto"
+              style="background: rgba(64, 64, 64, 1); width: fit-content">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- ADDRESSES -->
+
+        <div class="addresses col-lg-5 px-4 py-4">
+          <div class="d-flex flex-column gap-4">
+            <h3>Contact Information</h3>
+            <div>
+              <h6 class="">Corporate Office Address</h6>
+              <p>
+                <i class="fa-solid fa-location-dot pe-3 contact-icon"></i>Level #5, House #7/1, Road #02, Block #A,
+                Sonargaon Janapath,
+                Diabari, Uttara
+              </p>
+
+              <div class="ps-4">
+                <iframe class="map rounded-3 border "
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.02447272955047!2d90.37115970203399!3d23.87572999121455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c42733df84f9%3A0x40db9c5fa29826b9!2sSystem%20Engineering%20Ltd.!5e0!3m2!1sen!2sbd!4v1719823860580!5m2!1sen!2sbd"
+                  style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+            <div>
+              <h6 class="">Factory Address</h6>
+              <p>
+                <i class="fa-solid fa-location-dot pe-3 contact-icon"></i>BSCIC Electrical Goods Manufacturing and Light
+                Engineering
+                Industrial Estate, Plot #B-66, 67, 68, 69, Betka, Tongibari,
+                Munsiganj
+              </p>
+              <div class="ps-4">
+                <iframe class="rounded-3 map border "
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29262.015127410792!2d90.4388853775223!3d23.54142454403607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755af8e1c459d7f%3A0x24600d5e7f061182!2sBetka!5e0!3m2!1sen!2sbd!4v1719824308130!5m2!1sen!2sbd"
+                  style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+
+              <div class="pt-3">
+                <p>
+                  <i class="fa-solid fa-phone pe-1 contact-icon"></i> +88
+                  01711-293193
+                </p>
+                <p>
+                  <i class="fa-solid fa-tty pe-3 contact-icon"></i>09666-883399
+                </p>
+                <p>
+                  <i class="fa-solid fa-envelope pe-3 contact-icon"></i>info@influxbn.com
+                </p>
+                <p>
+                  <i class="fa-solid fa-globe pe-3 contact-icon"></i>www.influxbn.com
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- contents section -->
+    <!-- Support Section -->
 
-      <section class="contentSection container">
-        <div
-          class="contentWrapper m-auto row row-cols-1 gap-3 p-lg-3 justify-content-between"
-        >
-          <div class="contactForm col-lg-6 py-4 px-lg-3">
-            <form action="#" method="post" class="d-flex flex-column gap-5">
-              <div
-                class="userNames d-flex flex-wrap flex-sm-nowrap gap-5 justify-content-between"
-              >
-                <label for="firstName" class="d-flex flex-column gap-2 w-75">
-                  First Name
-                  <input
-                    type="text"
-                    name="firstName"
-                    id="firstName"
-                    class=""
-                    required
-                  />
-                </label>
+    <div class="container pt-5">
+      <div class="titlebox pb-5"><span>
+              <h2 style="line-height: .2px;">NEED SUPPORT</h2>
+          </span></div>
 
-                <label for="lastName" class="d-flex flex-column gap-2 w-75">
-                  Last Name
-                  <input
-                    type="text"
-                    name="lastName"
-                    id="lastName"
-                    class=""
-                    required
-                  />
-                </label>
+      <div class="text-center bg-light support-section">
+          <div class="row">
+              <div class="col-12 col-md-4 p-3">
+                  <i class="fa-regular fa-clock support-sec-icon"></i>
+                  <p class="h6">OUR OPENING HOUR</p>
+                  <p>SATURDAY TO THURSDAY <br> (09:00 AM - 06:00 PM)</p>
+                  <p></p>
               </div>
-
-              <div
-                class="userContact d-flex flex-wrap flex-sm-nowrap gap-5 justify-content-between"
-              >
-                <label for="email" class="d-flex flex-column gap-2 w-75">
-                  Email
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    class="userEmial"
-                    required
-                  />
-                </label>
-
-                <label for="phoneNumber" class="d-flex flex-column gap-2 w-75">
-                  Phone Number
-                  <input
-                    type="text"
-                    name="phoneNumber"
-                    id="phoneNumber"
-                    class=""
-                    required
-                  />
-                </label>
+              <div class="col-12 col-md-4 p-3">
+                  <i class="fa-solid fa-envelope support-sec-icon"></i>
+                  <p class="h6">EMAIL</p>
+                  <p>info@influxbn.com</p>
               </div>
-
-              <div class="d-flex flex-column gap-3">
-                <label for="subject"><b>Select Subject?</b></label>
-
-                <div
-                  class="subjectOptions d-flex flex-wrap gap-4 justify-content-between"
-                >
-                  <label class="d-flex gap-2">
-                    <input
-                      type="radio"
-                      name="subject"
-                      id="subject"
-                      required
-                      value="general inquiry"
-                    />
-                    General Inquiry
-                  </label>
-
-                  <label class="d-flex gap-2">
-                    <input
-                      type="radio"
-                      name="subject"
-                      id="subject"
-                      required
-                      value="product inquiry"
-                    />
-                    Product Inquiry
-                  </label>
-
-                  <label class="d-flex gap-2">
-                    <input
-                      type="radio"
-                      name="subject"
-                      id="subject"
-                      required
-                      value="project inquiry"
-                    />
-                    Project Inquiry
-                  </label>
-
-                  <label class="d-flex gap-2">
-                    <input
-                      type="radio"
-                      name="subject"
-                      id="subject"
-                      required
-                      value="technical inquiry"
-                    />
-                    Technical Inquiry
-                  </label>
-                </div>
+              <div class="col-12 col-md-4 p-3">
+                  <i class="fa-solid fa-phone support-sec-icon"></i>
+                  <p class="h6">PHONE</p>
+                  <p>+88 01711-293193</p>
               </div>
+          </div>
+      </div>
+  </div>
 
-              <div class="d-flex flex-column gap-3">
-                <label for="message"> Message </label>
-
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="1"
-                  placeholder="Write your message . . ."
-                  required
-                  class="py-2"
-                ></textarea>
+    <!-- Search Bar Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Search here
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="example" action="">
+              <div class="src-bar">
+                <input class="search-bar" type="text" placeholder="Search.." name="search" />
+                <button class="search-btn" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
               </div>
-
-              <button
-                type="submit"
-                class="btn text-white px-4 py-2 m-auto"
-                style="background: rgba(64, 64, 64, 1); width: fit-content"
-              >
-                Send Message
-              </button>
             </form>
           </div>
-
-          <!-- ADDRESSES -->
-
-          <div class="addresses col-lg-5 px-4 py-4">
-            <div class="d-flex flex-column gap-4">
-              <h3>Contact Information</h3>
-              <div>
-                <h6 class="">Corporate Office Address</h6>
-                <p>
-                  <i class="fa-solid fa-location-dot pe-3 contact-icon"></i
-                  >Level #5, House #7/1, Road #02, Block #A, Sonargaon Janapath,
-                  Diabari, Uttara
-                </p>
-
-                <div class="ps-4">
-                  <iframe
-                    class="map rounded-3 border "
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.02447272955047!2d90.37115970203399!3d23.87572999121455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c42733df84f9%3A0x40db9c5fa29826b9!2sSystem%20Engineering%20Ltd.!5e0!3m2!1sen!2sbd!4v1719823860580!5m2!1sen!2sbd"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  >
-                  </iframe>
-                </div>
-              </div>
-              <div>
-                <h6 class="">Factory Address</h6>
-                <p>
-                  <i class="fa-solid fa-location-dot pe-3 contact-icon"></i
-                  >BSCIC Electrical Goods Manufacturing and Light Engineering
-                  Industrial Estate, Plot #B-66, 67, 68, 69, Betka, Tongibari,
-                  Munsiganj
-                </p>
-                <div class="ps-4">
-                  <iframe
-                    class="rounded-3 map border "
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29262.015127410792!2d90.4388853775223!3d23.54142454403607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755af8e1c459d7f%3A0x24600d5e7f061182!2sBetka!5e0!3m2!1sen!2sbd!4v1719824308130!5m2!1sen!2sbd"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  >
-                  </iframe>
-                </div>
-
-                <div class="pt-3">
-                  <p>
-                    <i class="fa-solid fa-phone pe-1 contact-icon"></i> +88
-                    01711-293193
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-tty pe-3 contact-icon"></i
-                    >09666-883399
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-envelope pe-3 contact-icon"></i
-                    >info@influxbn.com
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-globe pe-3 contact-icon"></i
-                    >www.influxbn.com
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Search Bar Modal -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header border-0">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Search here
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <form class="example" action="">
-                <div class="src-bar">
-                  <input
-                    class="search-bar"
-                    type="text"
-                    placeholder="Search.."
-                    name="search"
-                  />
-                  <button class="search-btn" type="submit">
-                    <i class="fa fa-search"></i>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-----Footer Start------------->
+  <!-----Footer Start------------->
 
-    <footer class="footer mt-auto py-3 bg-light pt-5 pb-2">
-      <div class="container">
-        <a href="#"><img class="footer-logo" src="asset/images/logo.svg" /></a>
-        <p class="">Contact us</p>
-        <div class="d-flex">
-          <div class="icon-box">
-            <a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
-          </div>
-          <div class="icon-box">
-            <a href=""><i class="fa-brands fa-instagram social-icon"></i></a>
-          </div>
-          <div class="icon-box">
-            <a href=""><i class="fa-brands fa-linkedin-in social-icon"></i></a>
-          </div>
-          <div class="icon-box">
-            <a href=""><i class="fa-brands fa-twitter social-icon"></i></a>
-          </div>
-          <div class="icon-box">
-            <a href=""
-              ><i
-                style="margin-left: 9px"
-                class="fa-brands fa-youtube social-icon"
-              ></i
-            ></a>
-          </div>
+  <footer class="footer mt-auto py-3 bg-light pt-5 pb-2">
+    <div class="container">
+      <a href="#"><img class="footer-logo" src="asset/images/logo.svg" /></a>
+      <p class="">Contact us</p>
+      <div class="d-flex">
+        <div class="icon-box">
+          <a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
         </div>
-        <div class="row mt-4">
-          <div class="col-12 col-md-6 col-lg-3 p-2">
-            <p class="fw-bold fs-6">Careers</p>
-            <ul class="list-unstyled mb-0 pl-0 footer-options">
-              <li><a href="#">Sustainability</a></li>
-              <li><a href="#">Terms of Sale</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">Applicant Privacy Policy</a></li>
-              <li><a href="#">Website Terms and Conditions</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 p-2">
-            <p class="fw-bold fs-6">Support</p>
-            <ul class="list-unstyled mb-0 pl-0 footer-options">
-              <li><a href="faqs.html">FAQs</a></li>
-              <li><a href="#">Catalogue</a></li>
-              <li><a href="#">Warranty and Returns</a></li>
-              <li><a href="#">Technical Downloads</a></li>
-              <li><a href="#">Technical Assistance</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 p-2">
-            <p class="fw-bold fs-6">Tools</p>
-            <ul class="list-unstyled mb-0 pl-0 footer-options">
-              <li><a href="#">Down-light Selector</a></li>
-              <li><a href="#">Track Configurator</a></li>
-              <li><a href="#">Driver Calculator</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 p-2">
-            <p class="fw-bold fs-6">Help</p>
-            <ul class="list-unstyled mb-0 pl-0 footer-options">
-              <li><a href="#">Where to Buy</a></li>
-              <li><a href="#">Get in Touch</a></li>
-            </ul>
-          </div>
+        <div class="icon-box">
+          <a href=""><i class="fa-brands fa-instagram social-icon"></i></a>
+        </div>
+        <div class="icon-box">
+          <a href=""><i class="fa-brands fa-linkedin-in social-icon"></i></a>
+        </div>
+        <div class="icon-box">
+          <a href=""><i class="fa-brands fa-twitter social-icon"></i></a>
+        </div>
+        <div class="icon-box">
+          <a href=""><i style="margin-left: 9px" class="fa-brands fa-youtube social-icon"></i></a>
         </div>
       </div>
-      <div class="container">
-        <div class="copyrights text-center bl border-top pt-3 mt-3">
-          @ <span id="autodate"></span> - INFLUX TECHNOLOGY LTD.
+      <div class="row mt-4">
+        <div class="col-12 col-md-6 col-lg-3 p-2">
+          <p class="fw-bold fs-6">Careers</p>
+          <ul class="list-unstyled mb-0 pl-0 footer-options">
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Terms of Sale</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Applicant Privacy Policy</a></li>
+            <li><a href="#">Website Terms and Conditions</a></li>
+          </ul>
         </div>
-        <div class="text-end">
-          <p>
-            Develop By - <br />
-            <a target="_blank" href="https://www.ositsltd.com/">
-              <img
-                style="width: 30px; margin-right: 5px"
-                src="https://www.ositsltd.com/media/logo/logo_K6FFJzc.png"
-                alt=""
-              />
-              OS IT Solutions Ltd.</a
-            >
-          </p>
+        <div class="col-12 col-md-6 col-lg-3 p-2">
+          <p class="fw-bold fs-6">Support</p>
+          <ul class="list-unstyled mb-0 pl-0 footer-options">
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="#">Warranty and Returns</a></li>
+            <li><a href="#">Technical Downloads</a></li>
+            <li><a href="#">Technical Assistance</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 p-2">
+          <p class="fw-bold fs-6">Tools</p>
+          <ul class="list-unstyled mb-0 pl-0 footer-options">
+            <li><a href="#">Down-light Selector</a></li>
+            <li><a href="#">Track Configurator</a></li>
+            <li><a href="#">Driver Calculator</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 p-2">
+          <p class="fw-bold fs-6">Help</p>
+          <ul class="list-unstyled mb-0 pl-0 footer-options">
+            <li><a href="#">Where to Buy</a></li>
+            <li><a href="#">Get in Touch</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+    <div class="container">
+      <div class="copyrights text-center bl border-top pt-3 mt-3">
+        @ <span id="autodate"></span> - INFLUX TECHNOLOGY LTD.
+      </div>
+      <div class="text-end">
+        <p>
+          Develop By - <br />
+          <a target="_blank" href="https://www.ositsltd.com/">
+            <img style="width: 30px; margin-right: 5px" src="https://www.ositsltd.com/media/logo/logo_K6FFJzc.png"
+              alt="" />
+            OS IT Solutions Ltd.</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
-    <!-------Footer End------------->
+  <!-------Footer End------------->
 
-    <script></script>
+  <script></script>
 
-    <!-- JS EXTERNAL & INTERNAL LINK -->
+  <!-- JS EXTERNAL & INTERNAL LINK -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- JS EXTERNAL LINK  -->
-    <script src="./asset/js/app.js"></script>
-    <script src="./asset/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- JS EXTERNAL LINK  -->
+  <script src="./asset/js/app.js"></script>
+  <script src="./asset/js/main.js"></script>
 
-    <script src="./asset/js/common.js" defer></script>
+  <script src="./asset/js/common.js" defer></script>
 
-    <script>
-      var url =
-        "https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?32129";
-      var s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = url;
-      var options = {
-        enabled: true,
-        chatButtonSetting: {
-          backgroundColor: "#0a5f54",
-          ctaText: "",
-          borderRadius: "25",
-          marginLeft: "15",
-          marginBottom: "30",
-          marginRight: "20",
-          position: "right",
-        },
-        brandSetting: {
-          brandName: "Influx Technology Limited",
-          brandSubTitle: "An Electronics Products Manufacturing Company",
-          brandImg: "asset/images/logo.svg",
-          welcomeText:
-            "Hi there!\nWelcome to Influx Technology Ltd.\nHow can I help you?",
-          messageText: "",
-          backgroundColor: "#0a5f54",
-          ctaText: "Start Chat",
-          borderRadius: "",
-          autoShow: false,
-          phoneNumber: "8801711293193",
-        },
-      };
-      s.onload = function () {
-        CreateWhatsappChatWidget(options);
-      };
-      var x = document.getElementsByTagName("script")[0];
-      x.parentNode.insertBefore(s, x);
-    </script>
-  </body>
+  <script>
+    var url =
+      "https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?32129";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = url;
+    var options = {
+      enabled: true,
+      chatButtonSetting: {
+        backgroundColor: "#0a5f54",
+        ctaText: "",
+        borderRadius: "25",
+        marginLeft: "15",
+        marginBottom: "30",
+        marginRight: "20",
+        position: "right",
+      },
+      brandSetting: {
+        brandName: "Influx Technology Limited",
+        brandSubTitle: "An Electronics Products Manufacturing Company",
+        brandImg: "asset/images/logo.svg",
+        welcomeText:
+          "Hi there!\nWelcome to Influx Technology Ltd.\nHow can I help you?",
+        messageText: "",
+        backgroundColor: "#0a5f54",
+        ctaText: "Start Chat",
+        borderRadius: "",
+        autoShow: false,
+        phoneNumber: "8801711293193",
+      },
+    };
+    s.onload = function () {
+      CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName("script")[0];
+    x.parentNode.insertBefore(s, x);
+  </script>
+</body>
+
 </html>
