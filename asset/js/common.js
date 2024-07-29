@@ -44,7 +44,7 @@ faqsDetailsTogglers.forEach((eachFaqsDetailsToggler, index) => {
     ].lastElementChild.lastElementChild.classList.toggle("d-none");
 
     faqsDetailsTogglers[index].firstElementChild.classList.toggle(
-      "togglerAnimation"
+      "faqstogglerAnimation"
     );
   });
 });
@@ -77,3 +77,5 @@ const copyText = document.querySelector(".copyText");
 document.querySelector(`.copyButton`).addEventListener("click", (e) => {
   navigator.clipboard.writeText(copyText.value);
 });
+
+
