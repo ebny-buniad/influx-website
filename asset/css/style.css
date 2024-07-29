@@ -8,7 +8,7 @@ body {
   font-weight: weight;
   font-style: normal;
   font-size: 13px !important;
-  /* background: rgba(196, 196, 196, 1); */
+  background: #f3f3f3 !important;
 }
 
 /* General CSS Start */
@@ -16,13 +16,13 @@ a {
   text-decoration: none !important;
 }
 
-li>a {
+li > a {
   color: #000 !important;
   font-size: 13px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-li>a:hover {
+li > a:hover {
   color: #f47a20 !important;
   font-size: 13px;
 }
@@ -31,7 +31,7 @@ li>a:hover {
   font-weight: 500;
   text-decoration: none !important;
   color: black;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .nav-link:hover {
@@ -45,7 +45,7 @@ li>a:hover {
   background-color: transparent;
 }
 
-.src-bar{
+.src-bar {
   border: 1px solid rgb(201, 201, 201);
   border-radius: 25px;
 }
@@ -77,7 +77,6 @@ li>a:hover {
 .navbar-toggler-icon {
   width: 20px !important;
 }
-
 
 .main-header .navbar-collapse .navbar-nav .nav-item .nav-link {
   padding: 0px;
@@ -112,7 +111,6 @@ li>a:hover {
 }
 
 @media (max-width: 768px) {
-
   .nav-item {
     padding-top: 10px;
   }
@@ -125,21 +123,17 @@ li>a:hover {
 }
 
 @media (max-width: 1200px) {
-
   .nav-item {
     padding-top: 10px;
   }
-
 }
 
-
 @media (min-width: 1440px) {
-
   .navbar .nav-item .dropdown-menu {
     display: block;
     opacity: 0;
     visibility: hidden;
-    transition: .7s;
+    transition: 0.7s;
     margin-top: 0;
   }
 
@@ -154,7 +148,7 @@ li>a:hover {
   }
 
   .navbar .nav-item:hover .dropdown-menu {
-    transition: .7s;
+    transition: 0.7s;
     opacity: 1;
     visibility: visible;
     top: 100%;
@@ -178,13 +172,12 @@ input:focus {
   box-shadow: none !important;
 }
 
-
 /* logo */
 
 #logo {
   width: 150px;
   margin-left: 50px;
-  margin-right: 100px
+  margin-right: 100px;
 }
 
 @media (max-width: 1024px) {
@@ -194,13 +187,11 @@ input:focus {
   }
 }
 
-
 .navbar .megamenu {
   padding: 1rem;
 }
 
 @media all and (min-width: 576px) {
-
   .navbar .has-megamenu {
     position: static !important;
     margin-top: 0px !important;
@@ -214,7 +205,6 @@ input:focus {
 }
 
 @media all and (max-width: 992px) {
-
   .navbar .has-megamenu {
     position: static !important;
     margin-top: 0px !important;
@@ -225,11 +215,9 @@ input:focus {
     right: 0;
     width: 100%;
   }
-
 }
 
-@media(max-width: 991px) {
-
+@media (max-width: 991px) {
   .navbar.fixed-top .navbar-collapse,
   .navbar.sticky-top .navbar-collapse {
     overflow-y: auto;
@@ -239,7 +227,6 @@ input:focus {
 }
 
 /* ===== Navbar End ===== */
-
 
 /* ====== Hero Start ======= */
 
@@ -272,7 +259,6 @@ input:focus {
   object-fit: cover;
 }
 
-
 .hero-content-box {
   color: #ffffff;
 }
@@ -281,20 +267,20 @@ input:focus {
   font-family: "Kufam", sans-serif !important;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .hero-content-box {
     padding-top: 150px;
   }
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .hero-content-box {
     padding-top: 150px;
     padding-left: 50px !important;
   }
 }
 
-@media(min-width: 1440px) {
+@media (min-width: 1440px) {
   .hero-content-box {
     padding-top: 200px;
     padding-left: 100px !important;
@@ -317,19 +303,6 @@ input:focus {
   -webkit-backdrop-filter: blur(7.7px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .page-title {
   font-size: 50px !important;
   font-weight: 600;
@@ -346,7 +319,7 @@ input:focus {
   -webkit-backdrop-filter: blur(7.7px);
   color: #eee;
   padding: 15px 30px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .learn-more-btn:hover {
@@ -422,8 +395,8 @@ input:focus {
   object-fit: cover;
 }
 
-@media(max-width: 576px) {
-  .thumbnail{
+@media (max-width: 576px) {
+  .thumbnail {
     gap: 10px;
   }
   .thumbnail .item {
@@ -436,7 +409,6 @@ input:focus {
     margin-left: 5px;
     margin-right: 5px;
   }
-
 }
 
 /* arrows */
@@ -459,7 +431,7 @@ input:focus {
   color: #fff;
   font-family: monospace;
   font-weight: bold;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .arrows button:hover {
@@ -471,14 +443,13 @@ input:focus {
 
 /* ====== Product Categories Start ======== */
 
-
 .titlebox span {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
   line-height: 1px;
-  padding: .125em .375em;
+  padding: 0.125em 0.375em;
 }
 
 .titlebox::before,
@@ -487,7 +458,17 @@ input:focus {
   display: table-cell;
   width: 50%;
   vertical-align: middle;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(45%, rgba(0, 0, 0, 0)), color-stop(46%, rgb(157, 157, 157)), color-stop(54%, rgb(157, 157, 157)), color-stop(55%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0)),
+    color-stop(45%, rgba(0, 0, 0, 0)),
+    color-stop(46%, rgb(157, 157, 157)),
+    color-stop(54%, rgb(157, 157, 157)),
+    color-stop(55%, rgba(0, 0, 0, 0)),
+    color-stop(100%, rgba(0, 0, 0, 0))
+  );
 }
 
 .category-img {
@@ -503,7 +484,7 @@ input:focus {
   color: #eee !important;
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   .category-card-footer {
     display: flex;
   }
@@ -541,12 +522,11 @@ input:focus {
   align-items: center;
 }
 
-.clients-item>img {
+.clients-item > img {
   width: 120px !important;
   margin: auto;
   display: block;
   align-items: center;
-
 }
 
 .subscribe-bg {
@@ -590,51 +570,35 @@ input[type="email"] {
 
 /* ====== Product Categories End ======== */
 
-
-
-
-
 /* ===================================================================================================================== */
 
 /* Compnay Page Start */
 
-
 /* Compnay Page End */
 
-
 /* ===================================================================================================================== */
-
-
 
 /* ===================================================================================================================== */
 
 /* Products Page Start */
 
-
 /* Products Page End */
 
-
 /* ===================================================================================================================== */
-
 
 /* ===================================================================================================================== */
 
 /* Inspiaration Page Start */
 
-
 /* Inspiaration Page End */
 
-
 /* ===================================================================================================================== */
-
 
 /* ===================================================================================================================== */
 
 /* Application Page Start */
 
-
 /* Application Page End */
-
 
 /* ===================================================================================================================== */
 
@@ -642,20 +606,15 @@ input[type="email"] {
 
 /* News Page Start */
 
-
 /* News Page End */
 
-
 /* ===================================================================================================================== */
-
 
 /* ===================================================================================================================== */
 
 /* Service Page Start */
 
-
 /* Service Page End */
-
 
 /* ===================================================================================================================== */
 
@@ -663,21 +622,9 @@ input[type="email"] {
 
 /* Contact Page Start */
 
-
 /* Contact Page End */
 
-
 /* ===================================================================================================================== */
-
-
-
-
-
-
-
-
-
-
 
 /* ====== Footer Start ======== */
 .footer-logo {
@@ -693,7 +640,7 @@ footer a {
   color: #969696 !important;
   font-size: 13px;
   font-weight: 400;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 footer a:hover {
@@ -706,7 +653,7 @@ footer a:hover {
   width: 40px;
   margin-right: 10px;
   border-radius: 25px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .icon-box:hover {
@@ -724,40 +671,7 @@ footer a:hover {
   color: #565656;
 }
 
-
 /* ====== Footer End ======== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ##### BOOTSTRAP CUSTOM CSS START ##### */
 
@@ -778,7 +692,6 @@ footer a:hover {
 }
 
 @media (min-width: 576px) {
-
   .container-sm,
   .container {
     max-width: 540px;
@@ -786,7 +699,6 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
-
   .container-md,
   .container-sm,
   .container {
@@ -795,7 +707,6 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
-
   .container-lg,
   .container-md,
   .container-sm,
@@ -805,7 +716,6 @@ footer a:hover {
 }
 
 @media (min-width: 1200px) {
-
   .container-xl,
   .container-lg,
   .container-md,

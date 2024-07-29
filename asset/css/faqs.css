@@ -1,0 +1,21 @@
+body {
+  background: rgba(196, 196, 196, 1);
+}
+.eachFaqsType {
+  padding: 2rem;
+  border-radius: 10px;
+  background: white;
+}
+
+.eachContent {
+  border-bottom: 1px solid rgba(154, 154, 154, 0.361);
+}
+
+/* animation with javaScript */
+
+.togglerAnimation {
+  color: var(--custom-orange-color) !important;
+}
+.HideFaqsDetails {
+  color: var(--custom-orange-color) !important;
+}
