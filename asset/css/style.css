@@ -705,7 +705,7 @@ button {
   height: 100svh;
   overflow-y: auto;
   top: 0%;
-  order: 100;
+  z-index: 99;
 }
 
 .brochuresPanelToggleAnimation {
@@ -717,7 +717,7 @@ button {
   max-width: 32rem;
   border-radius: 5px;
   background: white;
-  top: 8rem;
+  top: 5rem;
   margin: auto;
 }
 
@@ -862,7 +862,8 @@ span {
 
 .applicationImage {
   width: 100%;
-  height: 150px;
+  max-width: 700px;
+  aspect-ratio: 3/2;
   object-fit: cover;
 }
 
@@ -877,7 +878,7 @@ span {
 /* contents */
 .newsImage {
   width: 100%;
-  height: 220px;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
 }
 
