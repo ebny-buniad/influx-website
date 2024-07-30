@@ -794,8 +794,8 @@ button {
 }
 .searchOptions option{
 
-  color: rgba(119, 119, 119, 1) !important;
-  background: white !important;
+  color: white !important;
+  background:rgb(0 0 0 / 52%) !important;
 
 }
 
