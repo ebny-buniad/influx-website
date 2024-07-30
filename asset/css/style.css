@@ -505,30 +505,29 @@ input:focus {
 
 /* ====== Product Categories Start ======== */
 
-.titlebox span {
-  display: table-cell;
+.headline-title {
+  width: 100%;
   text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  line-height: 1px;
-  padding: 0.125em 0.375em;
+  position: relative;
 }
 
-.titlebox::before,
-.titlebox::after {
-  content: "";
-  display: table-cell;
-  width: 50%;
-  vertical-align: middle;
-  background: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      color-stop(0%, rgba(0, 0, 0, 0)),
-      color-stop(45%, rgba(0, 0, 0, 0)),
-      color-stop(46%, rgb(157, 157, 157)),
-      color-stop(54%, rgb(157, 157, 157)),
-      color-stop(55%, rgba(0, 0, 0, 0)),
-      color-stop(100%, rgba(0, 0, 0, 0)));
+.section-headline {
+  position: relative;
+  padding: 10px;
+  background: #ffffff;
+  display: inline-block;
+  z-index: 1;
+}
+
+.headline-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: .1px;
+  background: #d0d0d0;
+  z-index: 0;
 }
 
 .category-img {
