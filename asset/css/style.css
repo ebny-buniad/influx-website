@@ -875,14 +875,11 @@ span {
   text-transform: uppercase;
 }
 
-@media(max-width:576px) {
+/* @media(max-width:576px) {
   .applicationImage{
     height: 40px;
   }
-  .serviceImage{
-    aspect-ratio: 2/1;
-  }
-}
+} */
 
 /* Application Page End */
 
