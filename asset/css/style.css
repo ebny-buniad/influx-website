@@ -495,7 +495,7 @@ input:focus {
 }
 
 .heroTitle {
-  font-size: 50px !important;
+  font-size: clamp(2.5rem, 2.375rem + 0.625vw, 3.125rem) !important;
   font-weight: 600;
   color: white;
   text-align: center;
@@ -800,16 +800,15 @@ button {
 } */
 
 .eachInspirations {
-  width: 98%;
+  width: 100%;
   max-width: 600px;
 
 }
 
 
-@media (min-width:470px) {
+@media (min-width:1200px) {
   .eachInspirations {
-    width: 30%;
-    min-width: 400px;
+    /* min-width: 400px; */
     aspect-ratio: 3/2;
   }
 }
