@@ -25,6 +25,12 @@ body {
   background: #ffffff !important;
 }
 
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+ }
+
 /* General CSS Start */
 
 p,
@@ -721,7 +727,7 @@ button {
   max-width: 32rem;
   border-radius: 5px;
   background: white;
-  top: 5rem;
+  top: 6rem;
   margin: auto;
 }
 
@@ -779,6 +785,19 @@ button {
 /* ===================================================================================================================== */
 
 /* Products Page Start */
+
+/* contents */
+
+.productsContents{
+  max-width: 1400px !important;
+}
+
+.productsCategories label:has(.eachProductsCategory:checked) p{
+  color: var(--custom-orange-color) !important;
+}
+.productsCategories label:has(.eachProductsCategory:checked) i{
+  color: var(--custom-orange-color) !important;
+}
 
 /* Products Page End */
 
