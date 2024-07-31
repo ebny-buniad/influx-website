@@ -22,7 +22,7 @@ body {
   font-weight: weight;
   font-style: normal;
   font-size: 0.75rem !important;
-  background: #ffffff !important;
+  background: #ffffff!important;
 }
 
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -487,8 +487,12 @@ input:focus {
 
 /* for all pages HERO section except index.html */
 
+.hero{
+  margin-top: 81px !important;
+}
+
 .heroWrapper {
-  height: 60vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
