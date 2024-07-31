@@ -874,9 +874,14 @@ span {
 
 .applicationImage {
   width: 100%;
-  max-width: 700px;
   aspect-ratio: 3/2;
   object-fit: cover;
+}
+
+@media(min-width:768px) {
+  .applicationImage {
+    aspect-ratio: 1;
+  }
 }
 
 .application-title{
@@ -934,11 +939,10 @@ span {
   object-fit: cover;
 }
 
-@media(min-width:576px) {
+/* @media(min-width:576px) {
   .serviceImage{
-    /* max-width: 150px; */
   }
-}
+} */
 
 /* Service Page End */
 
