@@ -788,12 +788,15 @@ button {
 .searchOptions {
   /* max-width: 170px; */
   color: white;
-  background: rgba(255, 255, 255, 0.237);
+  background: #ffffff1a;
+  backdrop-filter: blur(20px);
   outline: none;
+  border: none;
   border-bottom: 2px solid var(--custom-orange-color);
+  padding: 0.7rem;
 }
 .searchOptions option{
-
+  padding-block: 0.6rem;
   color: white !important;
   background:rgb(0 0 0 / 52%) !important;
 
