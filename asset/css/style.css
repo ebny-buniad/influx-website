@@ -795,6 +795,21 @@ button {
 .productsContents{
   max-width: 1400px !important;
 }
+.productsContentsWrapper{
+  display: flex;
+  flex-direction: column;
+  
+}
+@media (min-width: 576px) {
+
+  .productsContentsWrapper{
+    flex-direction: row;
+    height: 100svh !important;
+  }
+  .productsSidebar{
+    max-width: 190px;
+  }
+}
 
 .productsCategories label:has(.eachProductsCategory:checked) p{
   color: var(--custom-orange-color) !important;
@@ -813,14 +828,18 @@ button {
 
 /* contents */
 
-.productsTypesMenus label:has(.eachProductsTypesMenu:checked) p{
-  color: var(--custom-orange-color) !important;
-}
-.productsTypesMenus label:has(.eachProductsTypesMenu:checked) i{
-  color: var(--custom-orange-color) !important;
-}
 .eachProductsTypesMenuWrapper{
   background: rgba(238, 238, 238, 1);
+}
+.eachProductsTypesMenuWrapper:has(input:checked){
+  border-bottom: 1px solid white !important;
+  background: var(--custom-orange-color);
+}
+.productsTypesMenus label:has(.eachProductsTypesMenu:checked) p{
+  color: white !important;
+}
+.productsTypesMenus label:has(.eachProductsTypesMenu:checked) i{
+  color: white !important;
 }
 .MenusSubmitBtn,.MenusResetBtn{
   font-size: 10px !important;
