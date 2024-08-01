@@ -979,7 +979,7 @@ span {
 
 .addresses {
   border-radius: 5px;
-  background: #f3f3f3;
+  background: white;
 }
 
 .map {
@@ -1059,10 +1059,7 @@ footer a:hover {
 
 .icon-box {
   border: 1px solid rgb(191, 191, 191);
-  height: 40px;
-  width: 40px;
-  margin-right: 10px;
-  border-radius: 25px;
+  border-radius: 100%;
   transition: 0.3s;
 }
 
@@ -1075,9 +1072,8 @@ footer a:hover {
 }
 
 .social-icon {
-  margin-left: 28%;
-  margin-top: 28%;
-  font-size: 18px;
+  padding: 0.6rem;
+  font-size: 1.3rem;
   color: #565656;
 }
 
