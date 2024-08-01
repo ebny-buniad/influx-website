@@ -8,14 +8,14 @@ const HideDetails = document.querySelectorAll(".HideDetails");
 detailsTogglers.forEach((eachDetailsToggler, index) => {
   eachDetailsToggler.addEventListener("click", (e) => {
     document
-      .querySelector(`.details${index}`)
+      .getElementById(`details${index}`)
       .classList.toggle("detailsToggleAnimation");
 
     detailsTogglers[index].classList.toggle("togglerAnimation");
 
-    document.querySelector(`.viewDetails${index}`).classList.toggle("d-none");
+    document.getElementById(`viewDetails${index}`).classList.toggle("d-none");
 
-    document.querySelector(`.HideDetails${index}`).classList.toggle("d-none");
+    document.getElementById(`HideDetails${index}`).classList.toggle("d-none");
   });
 });
 
