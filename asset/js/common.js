@@ -79,3 +79,10 @@ document.querySelector(`.copyButton`).addEventListener("click", (e) => {
 });
 
 
+// eachProductsCategory
+
+document.querySelectorAll(`.MenusSubmitBtn`).addEventListener(`click`,(e)=>{
+  e.preventDefault()
+})
+
+

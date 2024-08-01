@@ -809,6 +809,32 @@ button {
 
 /* ===================================================================================================================== */
 
+/* eachProductsCategory Page Start */
+
+/* contents */
+
+.productsTypesMenus label:has(.eachProductsTypesMenu:checked) p{
+  color: var(--custom-orange-color) !important;
+}
+.productsTypesMenus label:has(.eachProductsTypesMenu:checked) i{
+  color: var(--custom-orange-color) !important;
+}
+.eachProductsTypesMenuWrapper{
+  background: rgba(238, 238, 238, 1);
+}
+.MenusSubmitBtn,.MenusResetBtn{
+  font-size: 10px !important;
+  padding:0.5rem;
+  color: white !important;
+  background: rgba(64, 64, 64, 1) !important;
+}
+
+/* eachProductsCategory Page End */
+
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+
 /* Inspirations Page Start */
 
 /* hero */
