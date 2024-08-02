@@ -1,6 +1,7 @@
-console.log(window.location.pathname)
-// details toggling with index
 
+console.log(window.location.pathname);
+
+// details toggling with index
 const detailsTogglers = document.querySelectorAll(".detailsToggler");
 const details = document.querySelectorAll(".details");
 const viewDetails = document.querySelectorAll(".viewDetails");
@@ -49,40 +50,73 @@ faqsDetailsTogglers.forEach((eachFaqsDetailsToggler, index) => {
   });
 });
 
-// BROCHURES
 
-document.querySelector(".brochuresToggler").addEventListener("click", (e) => {
-  document.querySelector(".brochures").classList.toggle("brochuresAnimation");
-  document
-    .querySelector(".directionArrow")
-    .classList.toggle("directionArrowAnimation");
-});
-
-// BROCHURES panel
-
-const brochuresPanelToogler = document.querySelectorAll(
-  `.brochuresPanelToogler`
-);
-
-brochuresPanelToogler.forEach((eachBrochuresPanelToogler) => {
-  eachBrochuresPanelToogler.addEventListener("click", (e) => {
-    console.log("working");
-    document
-      .querySelector(`.brochuresPanel`)
-      .classList.toggle("brochuresPanelToggleAnimation");
-  });
-});
-
-const copyText = document.querySelector(".copyText");
-document.querySelector(`.copyButton`).addEventListener("click", (e) => {
-  navigator.clipboard.writeText(copyText.value);
-});
 
 
 // eachProductsCategory
 
-document.querySelectorAll(`.MenusSubmitBtn`).addEventListener(`click`,(e)=>{
-  e.preventDefault()
+
+const rangeInputs=document.querySelectorAll(`.rangeInput`)
+rangeInputs.forEach((eachRangeInput,index)=>{
+  document.getElementById(`rangeOutput${index}`).innerText=`${eachRangeInput.min} - ${eachRangeInput.value}`
+  eachRangeInput.addEventListener(`input`,(e)=>{
+    let rangeValue=e.target.value
+    let rangeMinimumValue=e.target.min
+
+    document.getElementById(`rangeOutput${index}`).innerText=`${rangeMinimumValue} - ${rangeValue}`
+
+  })
 })
+
+const MenusSubmitBtns= document.querySelectorAll(`.MenusSubmitBtn`)
+
+MenusSubmitBtns.forEach((eachMenusSubmitBtn)=>{
+  eachMenusSubmitBtn.addEventListener(`click`,(e)=>{
+    e.preventDefault()
+  })
+})
+
+
+
+
+
+
+// BROCHURES
+
+
+  const Toggler = document.querySelector(`.brochuresToggler`);
+
+  Toggler.addEventListener(`click`,(e)=>{
+
+    document.querySelector(".brochures").classList.toggle("brochuresAnimation");
+    document
+      .querySelector(".directionArrow")
+      .classList.toggle("directionArrowAnimation");
+  })
+
+
+
+  // BROCHURES panel
+
+  const brochuresPanelToogler = document.querySelectorAll(
+    `.brochuresPanelToogler`
+  );
+
+  brochuresPanelToogler.forEach((eachBrochuresPanelToogler) => {
+    eachBrochuresPanelToogler.addEventListener("click", (e) => {
+      console.log("working");
+      document
+        .querySelector(`.brochuresPanel`)
+        .classList.toggle("brochuresPanelToggleAnimation");
+    });
+  });
+
+  const copyText = document.querySelector(".copyText");
+  document.querySelector(`.copyButton`).addEventListener("click", (e) => {
+    navigator.clipboard.writeText(copyText.value);
+  });
+
+
+
 
 

@@ -804,7 +804,7 @@ button {
 
   .productsContentsWrapper{
     flex-direction: row;
-    height: 100svh !important;
+    height: 88svh !important;
   }
   .productsSidebar{
     max-width: 190px;
@@ -842,7 +842,7 @@ button {
   color: white !important;
 }
 .MenusSubmitBtn,.MenusResetBtn{
-  font-size: 10px !important;
+  font-size: 12px !important;
   padding:0.5rem;
   color: white !important;
   background: rgba(64, 64, 64, 1) !important;
