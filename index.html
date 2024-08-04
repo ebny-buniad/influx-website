@@ -208,7 +208,7 @@
                                 <p>Highlight Your Style</p>
                             </div>
                             <div>
-                                <a class="view-products-btn text-white" href=""><span class="text-white">View
+                                <a class="view-products-btn text-white" href="./products.html"><span class="text-white">View
                                         Products</span></a>
                             </div>
                         </div>
@@ -223,7 +223,7 @@
                                 <p>Mordern & Classic Design</p>
                             </div>
                             <div>
-                                <a class="view-products-btn text-white" href=""><span class="text-white">View
+                                <a class="view-products-btn text-white" href="./products.html"><span class="text-white">View
                                         Products</span></a>
                             </div>
                         </div>
@@ -238,7 +238,7 @@
                                 <p>Make a Bold Statement</p>
                             </div>
                             <div>
-                                <a class="view-products-btn text-white" href=""><span class="text-white">View
+                                <a class="view-products-btn text-white" href="./products.html"><span class="text-white">View
                                         Products</span></a>
                             </div>
                         </div>
@@ -253,7 +253,7 @@
             <h5 class="pb-3">EXPLORE BY TYPES</h5>
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/1.jpg" class="light-types-img" alt="...">
@@ -263,7 +263,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/2.jpg" class="light-types-img" alt="...">
@@ -273,7 +273,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/3.jpg" class="light-types-img" alt="...">
@@ -283,7 +283,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/4.jpg" class="light-types-img" alt="...">
@@ -293,7 +293,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/5.jpg" class="light-types-img" alt="...">
@@ -303,7 +303,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/6.jpg" class="light-types-img" alt="...">
@@ -313,7 +313,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/7.jpg" class="light-types-img" alt="...">
@@ -323,7 +323,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/8.jpg" class="light-types-img" alt="...">
@@ -333,7 +333,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/9.jpg" class="light-types-img" alt="...">
@@ -343,7 +343,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/10.jpg" class="light-types-img" alt="...">
@@ -353,7 +353,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/11.jpg" class="light-types-img" alt="...">
@@ -363,7 +363,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./panelLights.html">
                     <div class="col">
                         <div class="card h-100 border-0">
                             <img src="asset/images/home/light-types/12.jpg" class="light-types-img" alt="...">
@@ -477,10 +477,60 @@
                     <div class="modal-body">
                         <form class="example" action="">
                             <div class="src-bar">
-                                <input class="search-bar" type="text" placeholder="Search.." name="search">
-                                <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                                <input class="search-bar" type="text" placeholder="Search.." name="search" onkeyup="filterFunction()">
+                                <i class="fa fa-search p-3"></i>
                             </div>
                         </form>
+                        <div class="searchBarProductsWrapper container-fluid d-flex flex-column pt-3 gap-3">
+
+                            <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                                <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                                <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                            </a>
+
+                            <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                                <img src="./asset/images/products/0.png" alt="" class="searchBarProductImage">
+                                <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                            </a>
+
+                            <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                                <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                                <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                            </a>
+
+                            <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                                <img src="./asset/images/products/0.png" alt="" class="searchBarProductImage">
+                                <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                            </a>
+
+                            <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                                <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                                <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                            </a>
+
+                            <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                                <img src="./asset/images/products/0.png" alt="" class="searchBarProductImage">
+                                <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                            </a>
+
+                            <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                                <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                                <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                            </a>
+
+                            <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                                <img src="./asset/images/products/0.png" alt="" class="searchBarProductImage">
+                                <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
