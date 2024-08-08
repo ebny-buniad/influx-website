@@ -27,8 +27,10 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* General CSS Start */
@@ -55,13 +57,13 @@ a {
   color: rgba(119, 119, 119, 1);
 }
 
-li > a {
+li>a {
   color: #000 !important;
   font-size: 13px;
   transition: 0.3s;
 }
 
-li > a:hover {
+li>a:hover {
   color: #f47a20 !important;
   font-size: 13px;
 }
@@ -70,7 +72,7 @@ main section {
   margin-bottom: 2rem;
 }
 
-.navbar-brand{
+.navbar-brand {
   padding: 0% !important;
 }
 
@@ -119,16 +121,18 @@ main section {
   scrollbar-color: var(--custom-orange-color);
 }
 
-.searchBarProduct{
+.searchBarProduct {
   display: flex;
   align-items: center;
   gap: 1rem;
-  
+
 }
-.searchBarProduct:hover{
+
+.searchBarProduct:hover {
   background: var(--custom-orange-color);
 }
-.searchBarProduct:hover b{
+
+.searchBarProduct:hover b {
   color: white;
 }
 
@@ -141,7 +145,7 @@ main section {
 
 /* ===== Navbar Start ===== */
 
-.active{
+.active {
   color: #f47a20 !important;
 }
 
@@ -298,6 +302,7 @@ input:focus {
 }
 
 @media (max-width: 991px) {
+
   .navbar.fixed-top .navbar-collapse,
   .navbar.sticky-top .navbar-collapse {
     overflow-y: auto;
@@ -347,9 +352,6 @@ input:focus {
   color: #ffffff;
 }
 
-.hero-content-box {
-  padding-top: 150px;
-}
 
 
 
@@ -484,6 +486,7 @@ input:focus {
     flex-shrink: 0;
     position: relative;
   }
+
   .thumbnail .item img {
 
     padding: 5px;
@@ -637,7 +640,7 @@ input:focus {
   align-items: center;
 }
 
-.clients-item > img {
+.clients-item>img {
   width: 120px !important;
   margin: auto;
   display: block;
@@ -699,26 +702,29 @@ input[type="email"] {
     width: 90%;
   }
 }
-.smallContentWrapper{
+
+.smallContentWrapper {
   padding-top: 2rem;
   margin-inline: auto;
 }
-.smallContentWrapper *{
+
+.smallContentWrapper * {
   text-align: justify;
 }
-.smallContentWrapper h6{
+
+.smallContentWrapper h6 {
   text-align: start;
 }
 
 
 @media (min-width: 764px) {
-  .smallContentWrapper{
+  .smallContentWrapper {
     width: 90%;
   }
 }
 
 @media (min-width: 1200px) {
-  .smallContentWrapper{
+  .smallContentWrapper {
     width: 70%;
   }
 }
@@ -852,15 +858,18 @@ button {
 .productsContents {
   max-width: 1400px !important;
 }
+
 .productsContentsWrapper {
   display: flex;
   flex-direction: column;
 }
+
 @media (min-width: 576px) {
   .productsContentsWrapper {
     flex-direction: row;
     height: 88svh !important;
   }
+
   .productsSidebar {
     max-width: 190px;
   }
@@ -869,6 +878,7 @@ button {
 .productsCategories label:has(.eachProductsCategory:checked) p {
   color: var(--custom-orange-color) !important;
 }
+
 .productsCategories label:has(.eachProductsCategory:checked) i {
   color: var(--custom-orange-color) !important;
 }
@@ -886,16 +896,20 @@ button {
 .eachProductsTypesMenuWrapper {
   background: rgba(238, 238, 238, 1);
 }
+
 .eachProductsTypesMenuWrapper:has(input:checked) {
   border-bottom: 1px solid white !important;
   background: var(--custom-orange-color);
 }
+
 .productsTypesMenus label:has(.eachProductsTypesMenu:checked) p {
   color: white !important;
 }
+
 .productsTypesMenus label:has(.eachProductsTypesMenu:checked) i {
   color: white !important;
 }
+
 .MenusSubmitBtn,
 .MenusResetBtn {
   font-size: 12px !important;
@@ -921,6 +935,7 @@ button {
 .addToBtn:has(input:checked) i {
   color: rgb(255, 193, 7);
 }
+
 .addToBtn:has(input:checked) b {
   color: var(--custom-orange-color);
 }
@@ -945,6 +960,7 @@ button {
   border-bottom: 2px solid var(--custom-orange-color);
   padding: 0.7rem;
 }
+
 .searchOptions option {
   padding-block: 0.6rem;
   color: white !important;
@@ -1056,7 +1072,8 @@ span {
   aspect-ratio: 16/8;
   border-radius: 10px;
 }
-.single-news > p > a {
+
+.single-news>p>a {
   color: #000 !important;
 }
 
@@ -1209,6 +1226,7 @@ footer a:hover {
 }
 
 @media (min-width: 576px) {
+
   .container-sm,
   .container {
     max-width: 540px;
@@ -1216,6 +1234,7 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
+
   .container-md,
   .container-sm,
   .container {
@@ -1224,6 +1243,7 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
+
   .container-lg,
   .container-md,
   .container-sm,
@@ -1233,6 +1253,7 @@ footer a:hover {
 }
 
 @media (min-width: 1200px) {
+
   .container-xl,
   .container-lg,
   .container-md,
