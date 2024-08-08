@@ -141,6 +141,10 @@ main section {
 
 /* ===== Navbar Start ===== */
 
+.active{
+  color: #f47a20 !important;
+}
+
 .navbar-show-bg {
   background-color: #ffffffff;
 }
