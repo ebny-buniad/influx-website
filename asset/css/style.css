@@ -563,6 +563,7 @@ input:focus {
 }
 
 .section-headline {
+  text-transform: uppercase;
   position: relative;
   padding: 10px;
   background: #ffffff;
@@ -694,6 +695,30 @@ input[type="email"] {
     width: 90%;
   }
 }
+.smallContentWrapper{
+  padding-top: 2rem;
+  margin-inline: auto;
+}
+.smallContentWrapper *{
+  text-align: justify;
+}
+.smallContentWrapper h6{
+  text-align: start;
+}
+
+
+@media (min-width: 764px) {
+  .smallContentWrapper{
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .smallContentWrapper{
+    width: 70%;
+  }
+}
+
 
 .eachContent {
   border-bottom: 1px solid rgba(154, 154, 154, 0.361);
@@ -1099,7 +1124,7 @@ input#email {
 .eachFaqsType {
   padding: 2rem;
   border-radius: 10px;
-  background: white;
+  /* background: white; */
 }
 
 /* animation with javaScript */
