@@ -1,81 +1,80 @@
-console.log(window.location.pathname)
-// details toggling with index
 
+console.log(window.location.pathname);
+
+// index page menu searchbar
+
+let input, filter, ul, li, a, b, i;
+input = document.querySelector(".search-bar");
+div = document.querySelector(".searchBarProductsWrapper");
+a = document.querySelectorAll(`.searchBarProduct`);
+b=document.querySelectorAll(".searchBarProductTitle")
+let searchResults=document.querySelector(`.searchResults`)
+searchResults.innerText=`Totall ${a.length}`
+
+function filterFunction() {  
+
+filter = input.value.toUpperCase();
+  for (i = 0; i < a.length; i++) {
+
+    let txtValue = b[i].innerText;
+    let lightType = b[i].title;
+    if (txtValue.toUpperCase().indexOf(filter) > -1 || lightType.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "flex";
+      a[i].classList.add("matchedWithSearch")
+      let totalSearchResult=document.querySelectorAll(".matchedWithSearch")
+      searchResults.innerText=`Totall Results ${totalSearchResult.length}`
+
+    } else {
+      a[i].style.display = "none";
+      a[i].classList.remove("matchedWithSearch")
+    }
+   
+
+  }
+
+}
+
+
+
+// details toggling 
 const detailsTogglers = document.querySelectorAll(".detailsToggler");
 const details = document.querySelectorAll(".details");
 const viewDetails = document.querySelectorAll(".viewDetails");
 const HideDetails = document.querySelectorAll(".HideDetails");
 detailsTogglers.forEach((eachDetailsToggler, index) => {
   eachDetailsToggler.addEventListener("click", (e) => {
-    document
-      .getElementById(`details${index}`)
-      .classList.toggle("detailsToggleAnimation");
+    details[index].classList.toggle("detailsToggleAnimation");
 
     detailsTogglers[index].classList.toggle("togglerAnimation");
 
-    document.getElementById(`viewDetails${index}`).classList.toggle("d-none");
+    viewDetails[index].classList.toggle("d-none");
 
-    document.getElementById(`HideDetails${index}`).classList.toggle("d-none");
-  });
-});
+    HideDetails[index].classList.toggle("d-none");
 
-// details toggling without index
-
-// for FAQs
-
-const faqsDetailsTogglers = document.querySelectorAll(".faqsDetailsToggler");
-const faqsDetails = document.querySelector(`.faqsDetails`);
-const viewFaqsDetails = document.querySelectorAll(".viewFaqsDetails");
-const HideFaqsDetails = document.querySelectorAll(".HideFaqsDetails");
-faqsDetailsTogglers.forEach((eachFaqsDetailsToggler, index) => {
-  eachFaqsDetailsToggler.addEventListener("click", (e) => {
-    faqsDetailsTogglers[index].nextElementSibling.classList.toggle(
-      "detailsToggleAnimation"
-    );
-
-    // faqsDetailsTogglers[index].classList.toggle('togglerAnimation')
-
-    faqsDetailsTogglers[
-      index
-    ].lastElementChild.firstElementChild.classList.toggle("d-none");
-
-    faqsDetailsTogglers[
-      index
-    ].lastElementChild.lastElementChild.classList.toggle("d-none");
-
-    faqsDetailsTogglers[index].firstElementChild.classList.toggle(
-      "faqstogglerAnimation"
+    detailsTogglers[index].firstElementChild.classList.toggle(
+      "togglerAnimation"
     );
   });
 });
 
-// BROCHURES
 
-document.querySelector(".brochuresToggler").addEventListener("click", (e) => {
-  document.querySelector(".brochures").classList.toggle("brochuresAnimation");
-  document
-    .querySelector(".directionArrow")
-    .classList.toggle("directionArrowAnimation");
-});
 
-// BROCHURES panel
 
-const brochuresPanelToogler = document.querySelectorAll(
-  `.brochuresPanelToogler`
-);
 
-brochuresPanelToogler.forEach((eachBrochuresPanelToogler) => {
-  eachBrochuresPanelToogler.addEventListener("click", (e) => {
-    console.log("working");
-    document
-      .querySelector(`.brochuresPanel`)
-      .classList.toggle("brochuresPanelToggleAnimation");
-  });
-});
 
-const copyText = document.querySelector(".copyText");
-document.querySelector(`.copyButton`).addEventListener("click", (e) => {
-  navigator.clipboard.writeText(copyText.value);
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

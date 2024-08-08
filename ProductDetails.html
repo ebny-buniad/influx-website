@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Influx Technology</title>
+    <title>Product Details - Influx Technology</title>
     <link rel="stylesheet" href="asset/css/style.css">
 
     <!-- EXTERNAL CSS LINK -->
@@ -108,140 +108,160 @@
 
 
 
-            <!-- About Us Content -->
+            <!--  Content -->
 
-    <section class="contentSection productsContents container-fluid px-sm-0" style="padding-top: 84.9px;">
+    <section class="contentSection container" style="padding-top: 84.9px;">
         <div class="">
-          <div class="productsContentsWrapper d-flex overflow-hidden">
 
-            <div class="productsSidebar flex-sm-shrink-0 h-100" style="overflow-y: scroll; scrollbar-width: thin; background: rgba(238, 238, 238, 1); width: 100% !important;">
+            <div class="row g-3">
 
-                <div class="productsCategories d-flex flex-column justify-content-start align-items-center" >
+                <!-- Image Carousel start -->
 
-                        <label class="eachContent w-100 d-flex gap-2 align-items-center justify-content-sm-between p-3">
-                            <p class="m-0 " style="font-weight: 500;">Indoor Lights </p>
-                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                            <input type="radio" name="eachProductsCategory" id="eachProductsCategory" value="indoorLight" checked class="d-none eachProductsCategory">
-                        </label>
-                    
+                <div id="productImagesCarousel" style="height: max-content;" class="productImagesCarousel carousel slide col-12 col-md-4 pb-5" data-bs-wrap="true" data-bs-ride="carousel">
 
-                    
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./asset/images/productDetailsPageImages/0.png" alt="Watt Panel Squire White Color Light" style="width: 100%; aspect-ratio: 1;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./asset/images/productDetailsPageImages/0.png" alt="Watt Panel Squire White Color Light" style="width: 100%; aspect-ratio: 1;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./asset/images/productDetailsPageImages/0.png" alt="Watt Panel Squire White Color Light" style="width: 100%; aspect-ratio: 1;">
+                        </div>
+                      </div>
+
+
+                    <div class="productImagesCarouselBtn carousel-indicators d-flex gap-3 justify-content-center" style="position: unset;">
+
+                        <div data-bs-target="#productImagesCarousel" data-bs-slide-to="0" class="active" style="width: max-content;">
+                            <img src="./asset/images/productDetailsPageImages/0.png" alt="product Image 1" style="width: 50px; aspect-ratio: 1;" class="d-block"> 
+                        </div>
+
+                        <div data-bs-target="#productImagesCarousel" data-bs-slide-to="1" style="width: max-content;">
+                            <img src="./asset/images/productDetailsPageImages/0.png" alt="product Image 2" style="width: 50px; aspect-ratio: 1;" class="d-block">
+                        </div>
+
+                        <div data-bs-target="#productImagesCarousel" data-bs-slide-to="2" style="width: max-content;">
+                            <img src="./asset/images/productDetailsPageImages/0.png" alt="product Image 3" style="width: 50px; aspect-ratio: 1;" class="d-block">
+                        </div>
                         
-                        <label class="eachContent w-100 d-flex gap-2 align-items-center justify-content-sm-between p-3">
-                            <p class="m-0 " style="font-weight: 500;">Outdoor Lights</p>
-                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                            <input type="radio" name="eachProductsCategory" id="eachProductsCategory" value="outdoorLight" class="d-none eachProductsCategory">
-                        </label>
-                    
-
-                    
-                        
-                        <label class="eachContent w-100 d-flex gap-2 align-items-center justify-content-sm-between p-3">
-                            <p class="m-0 " style="font-weight: 500;">Switchs & Sockets</p>
-                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                            <input type="radio" name="eachProductsCategory" id="eachProductsCategory" value="switch&Socket" class="d-none eachProductsCategory">
-                        </label>
-                    
-         
+                    </div>
                 </div>
-            </div>
 
+                <!-- Image Carousel end -->
 
-            <div class="h-100 no-scrollbar pt-4" style="overflow-y: scroll;">
-                <div class="d-flex flex-column gap-4 container-fluid">
+                <div class="col-12 col-md-8 d-flex flex-column gap-2">
+                    <h6>06 Watt Panel Squire White Color Light</h6>
 
-                    <h4 class="m-auto">Results for Indoor Lights</h4>
-
-                    <div class="productsType row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/spotLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">SPOT LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/bulkheadLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">BULKHEAD LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/stairLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">STAIR LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
-
-                        <a href="./panelLights.html" class="eachProductsType d-flex flex-column gap-3 justify-content-center">
-                            <img src="./asset/images/productsCategories/panelLight.jpg" alt="Panel Light" style="width: 100%; aspect-ratio: 1;">
-                            <p class="text-uppercase text-center" style="font-size: 1rem; color: black;">PANEL LIGHTS</p>
-                        </a>
+                    <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                        <i class="fa-solid fa-star" style="color: gray;"></i>
+                        <span>(0 Reviews)</span>
                     </div>
 
+                    <div class="d-flex gap-2 align-items-center">
+                        <span>Product ID:</span>
+                        <b>UAF-850931221</b>
+                    </div>
 
+                    <div class="d-flex gap-2 align-items-center">
+                        <span>Estimate Shipping Time:</span>
+                        <b>3 days</b>
+                    </div>
 
+                    <div class="d-flex flex-wrap gap-3 gap-lg-5 align-items-center border-0 border-bottom pb-3">
 
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="fa-regular fa-circle-question text-warning " style="font-size: 1rem;"></i>
+                            <b class="" style="color: var(--custom-orange-color);">Product Inquiry</b>
+                        </div>
 
+                        <label class="d-flex gap-2 align-items-center addToBtn" style="cursor: pointer;">
+                            <input type="checkbox" class="d-none" name="AddToWishlist" id="">
+                            <i class="fa-regular fa-heart" style="font-size: 1rem;"></i>
+                            <b class="">Add to wishlist</b>
+                        </label>
                         
+                        <label class="d-flex gap-2 align-items-center addToBtn" style="cursor: pointer;">
+                            <input type="checkbox" class="d-none" name="AddToCompare" id="">
+                            <i class="fa-solid fa-code-compare" style="font-size: 1rem;"></i>
+                            <b class="">Add to compare</b>
+                        </label>
 
-            
+                    </div>
+
+                    <div class="col-8 d-flex flex-column gap-4 pt-3">
 
 
+                        <div class="d-flex gap-5 align-items-center  ">
+                            <span>Price:</span>
+    
+                            <div class="d-flex gap-2 align-items-center">
+                                <h6 style="color: var(--custom-orange-color); margin-bottom: 0px;">৳220</h6>
+                                <span class="text-decoration-line-through ">৳350</span>
+                                <button disabled="disabled" class="rounded-3 border-0" style="background: var(--custom-orange-color);">
+                                    <b class="text-white text-nowrap">37% OFF</b>
+                                </button>
+                            </div>                        
+                            
+                        </div>
+    
+                        <div class="d-flex gap-5 align-items-center">
+                            <span>Quantity:</span>
+    
+                            <div class="d-flex gap-4 align-items-center">
+    
+                                <button onclick="changeProductQuantity(-1)" class="rounded-3 border-0 QuantityDecrementBtn" style="background: #d3d3d3;">
+                                    <i class="fa-solid fa-minus p-1" style="font-size: 1rem;"></i>
+                                </button>
+    
+                                <h6 class="productQuantity" style="color: var(--custom-orange-color); margin-bottom: 0px;"></h6>
+    
+                                <button onclick="changeProductQuantity(+1)" class="rounded-3 border-0 QuantityIncrementBtn" style="background: #d3d3d3;">
+                                    <i class="fa-solid fa-plus p-1" style="font-size: 1rem;"></i>
+                                </button>
+    
+                            </div>                        
+                            
+                        </div>
+    
+                        <div class="d-flex gap-5 align-items-center ">
+                            <span>Total Price:</span>
+                            <div class="d-flex">
+                                <h6 style="color: var(--custom-orange-color); margin-bottom: 0px;">৳</h6>
+                                <h6 class="totalPrice" style="color: var(--custom-orange-color); margin-bottom: 0px;">220</h6>
+                            </div>
+                            
+                        </div>
+
+                        <div class="d-flex gap-3 align-items-center ">
+                            <button type="button" class="btn btn-warning text-white d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-cart-plus" style="font-size: 0.8rem;"></i>
+                                <b class="text-white text-nowrap" style="font-size: 0.75rem;">Add to cart</b>
+                            </button>
+
+                            <button type="button" class="btn btn-success text-white d-flex gap-2 align-items-center ">
+                                <i class="fa-solid fa-bag-shopping" style="font-size: 0.7rem;"></i>
+                                <b class="text-white text-nowrap" style="font-size: 0.75rem;">Buy Now</b>
+                            </button>
+                            
+                        </div>
+
+
+
+
+
+                    </div>
 
                 </div>
 
+
             </div>
 
-
-
-          </div>
         </div>
       </section>
   
@@ -435,6 +455,7 @@
     <script src="./asset/js/common.js" defer></script>
     <script src="./asset/js/brochures.js" defer></script>
     <script src="./asset/js/productDetails.js" defer></script>
+    
 
     <script>
         var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?32129';
@@ -455,7 +476,7 @@
             },
             "brandSetting": {
                 "brandName": "Influx Technology Limited",
-                "brandSubTitle": "Manufacturing, assembling & supplying high-quality switches, sockets & lighting solutions",
+                "brandSubTitle": "An Electronics Products Manufacturing Company",
                 "brandImg": "asset/images/logo.svg",
                 "welcomeText": "Hi there!\nWelcome to Influx Technology Ltd.\nHow can I help you?",
                 "messageText": "",
@@ -472,6 +493,7 @@
         var x = document.getElementsByTagName('script')[0];
         x.parentNode.insertBefore(s, x);
     </script>
+
 </body>
 
 </html>

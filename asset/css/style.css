@@ -22,24 +22,31 @@ body {
   font-weight: weight;
   font-style: normal;
   font-size: 0.75rem !important;
-  background: #ffffff!important;
+  background: #ffffff !important;
 }
 
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
- }
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 /* General CSS Start */
 
 p,
-span {
+span,
+b {
   color: rgba(119, 119, 119, 1);
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family: "Kufam", sans-serif!important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px !important;
+  font-family: "Kufam", sans-serif !important;
   font-weight: 600 !important;
 }
 
@@ -48,19 +55,23 @@ a {
   color: rgba(119, 119, 119, 1);
 }
 
-li>a {
+li > a {
   color: #000 !important;
   font-size: 13px;
   transition: 0.3s;
 }
 
-li>a:hover {
+li > a:hover {
   color: #f47a20 !important;
   font-size: 13px;
 }
 
 main section {
   margin-bottom: 2rem;
+}
+
+.navbar-brand{
+  padding: 0% !important;
 }
 
 .nav-link {
@@ -75,20 +86,23 @@ main section {
 }
 
 .search-btn {
-  border: 0px;
+  border: none;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: transparent;
 }
 
 .src-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   border: 1px solid rgb(201, 201, 201);
   border-radius: 25px;
 }
 
 .search-bar {
   border: 0px;
-  width: 91%;
+  width: 100%;
   border-radius: 25px;
   padding: 10px;
   padding-right: 20px;
@@ -96,6 +110,31 @@ main section {
 
 .search-bar:focus {
   border-radius: 25px;
+}
+
+.searchBarProductsWrapper {
+  height: 60svh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--custom-orange-color);
+}
+
+.searchBarProduct{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.searchBarProduct:hover{
+  background: var(--custom-orange-color);
+}
+.searchBarProduct:hover b{
+  color: white;
+}
+
+.searchBarProductImage {
+  width: 70px;
+  aspect-ratio: 1;
 }
 
 /* General CSS End */
@@ -121,9 +160,9 @@ main section {
   color: #061434;
 }
 
-.nav-item {
-  margin-right: 30px;
-}
+/* .nav-item {
+  height: fit-content;
+} */
 
 .main-header.sticky {
   position: fixed;
@@ -255,7 +294,6 @@ input:focus {
 }
 
 @media (max-width: 991px) {
-
   .navbar.fixed-top .navbar-collapse,
   .navbar.sticky-top .navbar-collapse {
     overflow-y: auto;
@@ -305,26 +343,20 @@ input:focus {
   color: #ffffff;
 }
 
-.hero-title {
-  font-family: "Kufam", sans-serif !important;
+.hero-content-box {
+  padding-top: 150px;
 }
 
-@media (max-width: 768px) {
-  .hero-content-box {
-    padding-top: 150px;
-  }
-}
+
 
 @media (min-width: 1024px) {
   .hero-content-box {
-    padding-top: 150px;
     padding-left: 50px !important;
   }
 }
 
 @media (min-width: 1440px) {
   .hero-content-box {
-    padding-top: 200px;
     padding-left: 100px !important;
   }
 
@@ -437,7 +469,7 @@ input:focus {
   object-fit: cover;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .thumbnail {
     gap: 10px;
   }
@@ -448,8 +480,14 @@ input:focus {
     flex-shrink: 0;
     position: relative;
   }
+  .thumbnail .item img {
+
+    padding: 5px;
+
+  }
 
   .arrow-btn {
+    padding: 6px 13px;
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -483,11 +521,9 @@ input:focus {
   color: #000;
 }
 
-
-
 /* for all pages HERO section except index.html */
 
-.hero{
+.hero {
   margin-top: 81px !important;
 }
 
@@ -527,6 +563,7 @@ input:focus {
 }
 
 .section-headline {
+  text-transform: uppercase;
   position: relative;
   padding: 10px;
   background: #ffffff;
@@ -535,12 +572,12 @@ input:focus {
 }
 
 .headline-title::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
-  height: .1px;
+  height: 0.1px;
   background: #d0d0d0;
   z-index: 0;
 }
@@ -596,7 +633,7 @@ input:focus {
   align-items: center;
 }
 
-.clients-item>img {
+.clients-item > img {
   width: 120px !important;
   margin: auto;
   display: block;
@@ -644,8 +681,6 @@ input[type="email"] {
 
 /* ====== Product Categories End ======== */
 
-
-
 /* ====== CONTENTS SECTION START ======== */
 
 /* contents */
@@ -660,6 +695,30 @@ input[type="email"] {
     width: 90%;
   }
 }
+.smallContentWrapper{
+  padding-top: 2rem;
+  margin-inline: auto;
+}
+.smallContentWrapper *{
+  text-align: justify;
+}
+.smallContentWrapper h6{
+  text-align: start;
+}
+
+
+@media (min-width: 764px) {
+  .smallContentWrapper{
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .smallContentWrapper{
+    width: 70%;
+  }
+}
+
 
 .eachContent {
   border-bottom: 1px solid rgba(154, 154, 154, 0.361);
@@ -679,7 +738,6 @@ input[type="email"] {
 }
 
 /* ====== CONTENTS SECTION End ======== */
-
 
 /* ====== BROCHURES SECTION START ======== */
 
@@ -706,11 +764,9 @@ button {
   background: rgba(64, 64, 64, 1);
 }
 
-
 /* ====== BROCHURES SECTION End ======== */
 
 /* ====== BROCHURES Download PANEL SECTION START ======== */
-
 
 .brochuresPanel {
   background: rgba(0, 0, 0, 0.507);
@@ -734,7 +790,6 @@ button {
   top: 6rem;
   margin: auto;
 }
-
 
 .brochuresPanelSocial:hover {
   color: var(--custom-orange-color);
@@ -774,9 +829,7 @@ button {
   display: none;
 }
 
-
 /* ====== BROCHURES Download PANEL SECTION  End ======== */
-
 
 /* ===================================================================================================================== */
 
@@ -792,18 +845,83 @@ button {
 
 /* contents */
 
-.productsContents{
+.productsContents {
   max-width: 1400px !important;
 }
+.productsContentsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .productsContentsWrapper {
+    flex-direction: row;
+    height: 88svh !important;
+  }
+  .productsSidebar {
+    max-width: 190px;
+  }
+}
 
-.productsCategories label:has(.eachProductsCategory:checked) p{
+.productsCategories label:has(.eachProductsCategory:checked) p {
   color: var(--custom-orange-color) !important;
 }
-.productsCategories label:has(.eachProductsCategory:checked) i{
+.productsCategories label:has(.eachProductsCategory:checked) i {
   color: var(--custom-orange-color) !important;
 }
 
 /* Products Page End */
+
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+
+/* eachProductsCategory Page Start */
+
+/* contents */
+
+.eachProductsTypesMenuWrapper {
+  background: rgba(238, 238, 238, 1);
+}
+.eachProductsTypesMenuWrapper:has(input:checked) {
+  border-bottom: 1px solid white !important;
+  background: var(--custom-orange-color);
+}
+.productsTypesMenus label:has(.eachProductsTypesMenu:checked) p {
+  color: white !important;
+}
+.productsTypesMenus label:has(.eachProductsTypesMenu:checked) i {
+  color: white !important;
+}
+.MenusSubmitBtn,
+.MenusResetBtn {
+  font-size: 12px !important;
+  padding: 0.5rem;
+  color: white !important;
+  background: rgba(64, 64, 64, 1) !important;
+}
+
+/* eachProductsCategory Page End */
+
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+
+/* productsDetails Page Start */
+
+/* contents */
+
+.productImagesCarouselBtn div.active img {
+  transform: scale(1.3);
+}
+
+.addToBtn:has(input:checked) i {
+  color: rgb(255, 193, 7);
+}
+.addToBtn:has(input:checked) b {
+  color: var(--custom-orange-color);
+}
+
+/* productsDetails Page End */
 
 /* ===================================================================================================================== */
 
@@ -823,11 +941,10 @@ button {
   border-bottom: 2px solid var(--custom-orange-color);
   padding: 0.7rem;
 }
-.searchOptions option{
+.searchOptions option {
   padding-block: 0.6rem;
   color: white !important;
-  background:rgb(0 0 0 / 52%) !important;
-
+  background: rgb(0 0 0 / 52%) !important;
 }
 
 /* contents */
@@ -839,17 +956,14 @@ button {
 .eachInspirations {
   width: 100%;
   max-width: 600px;
-
 }
 
-
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .eachInspirations {
     /* min-width: 400px; */
     aspect-ratio: 3/2;
   }
 }
-
 
 .eachInspirationsWrapper {
   height: 100%;
@@ -861,7 +975,6 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .eachInspirationsWrapper h2 {
@@ -873,7 +986,6 @@ span {
   font-size: 0.8rem;
 }
 
-
 .visitBtn {
   width: fit-content;
   height: fit-content;
@@ -882,8 +994,6 @@ span {
   color: white;
   background: rgba(255, 255, 255, 0.237);
 }
-
-
 
 /* Inspiaration Page End */
 
@@ -901,13 +1011,13 @@ span {
   object-fit: cover;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   .applicationImage {
     aspect-ratio: 1;
   }
 }
 
-.application-title{
+.application-title {
   text-transform: uppercase;
 }
 
@@ -935,15 +1045,14 @@ span {
 .readMore {
   color: var(--custom-orange-color);
   font-weight: 700;
-
 }
 
-.news-header-image{
+.news-header-image {
   width: 100%;
   aspect-ratio: 16/8;
   border-radius: 10px;
 }
-.single-news > p > a{
+.single-news > p > a {
   color: #000 !important;
 }
 
@@ -1015,12 +1124,12 @@ input#email {
 .eachFaqsType {
   padding: 2rem;
   border-radius: 10px;
-  background: white;
+  /* background: white; */
 }
 
 /* animation with javaScript */
 
-.faqstogglerAnimation {
+.togglerAnimation {
   color: var(--custom-orange-color) !important;
 }
 
@@ -1028,11 +1137,9 @@ input#email {
   color: var(--custom-orange-color) !important;
 }
 
-
 /* FAQs Page End */
 
 /* ===================================================================================================================== */
-
 
 /* ===================================================================================================================== */
 
@@ -1098,7 +1205,6 @@ footer a:hover {
 }
 
 @media (min-width: 576px) {
-
   .container-sm,
   .container {
     max-width: 540px;
@@ -1106,7 +1212,6 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
-
   .container-md,
   .container-sm,
   .container {
@@ -1115,7 +1220,6 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
-
   .container-lg,
   .container-md,
   .container-sm,
@@ -1125,7 +1229,6 @@ footer a:hover {
 }
 
 @media (min-width: 1200px) {
-
   .container-xl,
   .container-lg,
   .container-md,

@@ -47,50 +47,57 @@
   <!-- Header Start -->
   <!------------------------------>
   <header class="main-header position-fixed w-100">
+
     <div class="navbar-show-bg">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container p-0">
-          <span><a class="navbar-brand" href="index.html"><img id="logo" src="asset/images/logo.svg"
-                alt="" /></a></span>
-          <button class="navbar-toggler focus" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-aut">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="company.html">COMPANY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">PRODUCTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="inspirations.html">INSPIRATIONS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="applications.html">APPLICATIONS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">NEWS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">SERVICE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
-              </li>
-            </ul>
-            <!-- Button trigger modal -->
-            <button type="button" class="search-btn bg-light ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 rounded-0"
-              data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <i class="fa-solid fa-magnifying-glass"></i> Search
-            </button>
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container d-flex gap-3  p-0">
+                    <a class="navbar-brand" href="index.html" style="width: fit-content;">
+                        <img id="logo" src="asset/images/logo.svg" alt="" class="mx-3" style="width: 150px;">
+                    </a>
+                <button class="navbar-toggler focus" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto align-items-center justify-content-between gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="company.html">COMPANY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inspirations.html">INSPIRATIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="applications.html">APPLICATIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">SERVICE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="search-btn ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 rounded-0" style="background: #ededed;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-magnifying-glass"></i> 
+                                Search
+                            </button>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
     </div>
-  </header>
+</header>
   <!------------------------------>
   <!-- Header End  -->
   <!------------------------------>
@@ -235,90 +242,156 @@
     <!-- Search Bar Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header border-0">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Search here
-            </h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form class="example" action="">
-              <div class="src-bar">
-                <input class="search-bar" type="text" placeholder="Search.." name="search" />
-                <button class="search-btn" type="submit">
-                  <i class="fa fa-search"></i>
-                </button>
+          <div class="modal-content">
+              <div class="modal-header border-0">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Search here</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-            </form>
+              <div class="modal-body">
+                  <form class="example" action="">
+                      <div class="src-bar">
+                          <input class="search-bar" type="text" placeholder="Search.." name="search" onkeyup="filterFunction()">
+                          <i class="fa fa-search p-3"></i>
+                      </div>
+                  </form>
+                  <div class="searchBarProductsWrapper container-fluid d-flex flex-column pt-3 gap-3">
+
+                      <b class="searchResults" style="color: var(--custom-orange-color);"></b>
+
+                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                          <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                          <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                      </a>
+
+                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                          <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
+                          <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                      </a>
+
+                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                          <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                          <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                      </a>
+
+                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                          <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
+                          <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                      </a>
+
+                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                          <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                          <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                      </a>
+
+                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                          <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
+                          <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                      </a>
+
+                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                          <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                          <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                      </a>
+
+                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                          <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
+                          <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                      </a>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
+
   </main>
 
   <!-----Footer Start------------->
 
   <footer class="footer mt-auto py-3 bg-light pt-5 pb-2">
     <div class="container">
-        <div class="row mt-4">
-            <div class="col-12 col-md-6 col-lg-3 p-2">
-                <p class="fw-bold fs-6">Careers</p>
-                <ul class="list-unstyled mb-0 pl-0 footer-options">
-                    <li><a href="#">Sustainability</a></li>
-                    <li><a href="#">Terms of Sale</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Applicant Privacy Policy</a></li>
-                    <li><a href="#">Website Terms and Conditions</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 p-2">
-                <p class="fw-bold fs-6">Support</p>
-                <ul class="list-unstyled mb-0 pl-0 footer-options">
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="#">Catalogue</a></li>
-                    <li><a href="#">Warranty and Returns</a></li>
-                    <li><a href="#">Technical Downloads</a></li>
-                    <li><a href="#">Technical Assistance</a></li>
-                    <li><a href="#">Where to Buy</a></li>
-                    <li><a href="#">Get in Touch</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-6 col-lg-2 p-2">
-                <p class="fw-bold fs-6">Tools</p>
-                <ul class="list-unstyled mb-0 pl-0 footer-options">
-                    <li><a href="#">Down-light Selector</a></li>
-                    <li><a href="#">Track Configurator</a></li>
-                    <li><a href="#">Driver Calculator</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 p-2">
-                <p class="fw-bold fs-6">Follow Us</p>
-                <div class="d-flex gap-2">
-                    <div class="icon-box"><a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
-                    </div>
-                    <div class="icon-box"><a href=""><i class="fa-brands fa-instagram social-icon"></i></a></div>
-                    <div class="icon-box"><a href=""><i class="fa-brands fa-linkedin-in social-icon"></i></a>
-                    </div>
-                    <div class="icon-box"><a href=""><i class="fa-brands fa-x-twitter social-icon"></i></a>
-                    </div>
-
-                </div>
-            </div>
+      <div class="row mt-4">
+        <div class="col-12 col-md-6 col-lg-3 p-2">
+          <p class="fw-bold fs-6">Careers</p>
+          <ul class="list-unstyled mb-0 pl-0 footer-options">
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="TermsOfSale.html">Terms of Sale</a></li>
+            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="cookiePolicy.html">Cookie Policy</a></li>
+            <li><a href="applicantPrivacyPolicy.html">Applicant Privacy Policy</a></li>
+            <li><a href="termsConditions.html">Website Terms and Conditions</a></li>
+          </ul>
         </div>
+        <div class="col-12 col-md-6 col-lg-3 p-2">
+          <p class="fw-bold fs-6">Support</p>
+          <ul class="list-unstyled mb-0 pl-0 footer-options">
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="catalogues.html">Catalogue</a></li>
+            <li><a href="warranty.html">Warranty and Returns</a></li>
+            <li><a href="technicalDownloads.html">Technical Downloads</a></li>
+            <li><a href="whereToBuy.html">Where to Buy</a></li>
+            <li><a href="getInTouch.html">Get in Touch</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 p-2">
+          <p class="fw-bold fs-6">Tools</p>
+          <ul class="list-unstyled mb-0 pl-0 footer-options">
+            <li><a href="downlLightSelector.html">Down-light Selector</a></li>
+            <li><a href="trackConfiguration.html">Track Configurator</a></li>
+            <li><a href="driverCalculator.html">Driver Calculator</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 p-2">
+          <p class="fw-bold fs-6">Follow Us</p>
+          <div class="d-flex gap-2">
+            <div class="icon-box">
+              <a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
+            </div>
+            <div class="icon-box">
+              <a href=""
+                ><i class="fa-brands fa-instagram social-icon"></i
+              ></a>
+            </div>
+            <div class="icon-box">
+              <a href=""
+                ><i class="fa-brands fa-linkedin-in social-icon"></i
+              ></a>
+            </div>
+            <div class="icon-box">
+              <a href=""
+                ><i class="fa-brands fa-x-twitter social-icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container">
-        <div class="copyrights text-center bl border-top pt-3 mt-3">@ <span id="autodate"></span> - INFLUX
-            TECHNOLOGY LTD.</div>
-        <div class="text-end">
-            <p>Develop By - <br> <a target="_blank" href="https://www.ositsltd.com/"> <img
-                        style="width: 30px; margin-right: 5px;"
-                        src="https://www.ositsltd.com/media/logo/logo_K6FFJzc.png" alt=""> OS IT Solutions Ltd.</a>
-            </p>
-        </div>
+      <div class="copyrights text-center bl border-top pt-3 mt-3">
+        @ <span id="autodate"></span> - INFLUX TECHNOLOGY LTD.
+      </div>
+      <div class="text-end">
+        <p>
+          Develop By - <br />
+          <a target="_blank" href="https://www.ositsltd.com/">
+            <img
+              style="width: 30px; margin-right: 5px"
+              src="https://www.ositsltd.com/media/logo/logo_K6FFJzc.png"
+              alt=""
+            />
+            OS IT Solutions Ltd.</a
+          >
+        </p>
+      </div>
     </div>
-</footer>
+  </footer>
 
 
   <!-------Footer End------------->
@@ -341,6 +414,8 @@
   <script src="./asset/js/main.js"></script>
 
   <script src="./asset/js/common.js" defer></script>
+  <script src="./asset/js/brochures.js" defer></script>
+  <script src="./asset/js/productDetails.js" defer></script>
 
   <script>
     var url =
