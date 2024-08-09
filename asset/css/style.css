@@ -41,17 +41,6 @@ b {
   color: rgba(119, 119, 119, 1);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0px !important;
-  font-family: "Kufam", sans-serif !important;
-  font-weight: 600 !important;
-}
-
 a {
   text-decoration: none !important;
   color: rgba(119, 119, 119, 1);
@@ -852,6 +841,24 @@ button {
 /* ===================================================================================================================== */
 
 /* Products Page Start */
+
+.products-img {
+  width: 80%;
+  margin: auto;
+}
+
+.product-buy-btn {
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: 1px solid #f47a20;
+  color: rgb(145, 145, 145);
+  transition: .3s;
+}
+
+.product-buy-btn:hover {
+  border: 1px solid rgb(145, 145, 145);
+}
 
 /* contents */
 
