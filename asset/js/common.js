@@ -36,6 +36,7 @@ filter = input.value.toUpperCase();
 
 
 
+
 // details toggling 
 const detailsTogglers = document.querySelectorAll(".detailsToggler");
 const details = document.querySelectorAll(".details");
@@ -61,6 +62,28 @@ detailsTogglers.forEach((eachDetailsToggler, index) => {
 
 
 
+// productsTypes pages
+
+
+const rangeInputs=document.querySelectorAll(`.rangeInput`)
+rangeInputs.forEach((eachRangeInput,index)=>{
+  document.getElementById(`rangeOutput${index}`).innerText=`${eachRangeInput.min} - ${eachRangeInput.value}`
+  eachRangeInput.addEventListener(`input`,(e)=>{
+    let rangeValue=e.target.value
+    let rangeMinimumValue=e.target.min
+
+    document.getElementById(`rangeOutput${index}`).innerText=`${rangeMinimumValue} - ${rangeValue}`
+
+  })
+})
+
+const MenusSubmitBtns= document.querySelectorAll(`.MenusSubmitBtn`)
+
+MenusSubmitBtns.forEach((eachMenusSubmitBtn)=>{
+  eachMenusSubmitBtn.addEventListener(`click`,(e)=>{
+    e.preventDefault()
+  })
+})
 
 
 

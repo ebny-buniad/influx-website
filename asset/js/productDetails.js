@@ -1,29 +1,6 @@
-// productsTypes pages
-
-
-const rangeInputs=document.querySelectorAll(`.rangeInput`)
-rangeInputs.forEach((eachRangeInput,index)=>{
-  document.getElementById(`rangeOutput${index}`).innerText=`${eachRangeInput.min} - ${eachRangeInput.value}`
-  eachRangeInput.addEventListener(`input`,(e)=>{
-    let rangeValue=e.target.value
-    let rangeMinimumValue=e.target.min
-
-    document.getElementById(`rangeOutput${index}`).innerText=`${rangeMinimumValue} - ${rangeValue}`
-
-  })
-})
-
-const MenusSubmitBtns= document.querySelectorAll(`.MenusSubmitBtn`)
-
-MenusSubmitBtns.forEach((eachMenusSubmitBtn)=>{
-  eachMenusSubmitBtn.addEventListener(`click`,(e)=>{
-    e.preventDefault()
-  })
-})
-
-
-
 // productDetails Page
+
+// hero
 
 
 let productQuantity=1
@@ -52,3 +29,25 @@ function changeProductQuantity(quantity){
     document.querySelector(`.totalPrice`).innerText=changedTotalPrice
 
 }
+
+// Details and Description section
+
+const productDetailsTogglers =document.querySelectorAll(`.productDetailsToggler`)
+const productDetails =document.querySelectorAll(`.productDetail`)
+
+productDetailsTogglers.forEach((eachProductDetailsTogglers,index)=>{
+  eachProductDetailsTogglers.addEventListener(`click`,(e)=>{
+    
+    productDetailsTogglers.forEach((oneProductToggler)=>{
+      oneProductToggler.classList.remove(`productDetailsTogglerAnimation`)
+    })
+    productDetailsTogglers[index].classList.add(`productDetailsTogglerAnimation`)
+    
+    productDetails.forEach((eachProductDetails)=>{
+      // eachProductDetails.classList.remove(`d-flex`)
+      eachProductDetails.classList.toggle(`d-none`,true)
+    })
+    productDetails[index].classList.remove(`d-none`)
+    productDetails[index].classList.toggle(`d-flex`,true)
+  })
+})
