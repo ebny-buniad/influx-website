@@ -65,7 +65,7 @@
                                 <a class="nav-link" aria-current="page" href="company.html">COMPANY</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="products.html">PRODUCTS</a>
+                                <a class="nav-link active" href="products.html">PRODUCTS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="inspirations.html">INSPIRATIONS</a>
@@ -106,501 +106,502 @@
     <main class="flex-shrink-0">
 
 
+        <section style="margin-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-2 col-lg-2 productsContentsWrapper p-0">
+                        <div class="productsSidebar flex-shrink-0 h-100"
+                            style="overflow-y: scroll; scrollbar-width: thin; background: rgba(238, 238, 238, 1); width: 100% !important;">
 
+                            <div class="Filter d-flex flex-column justify-content-start align-items-center">
 
+                                <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
 
-        <!--  Content -->
+                                    <label class="d-flex flex-column gap-3 py-3 px-2 overflow-hidden">
+                                        <p class="m-0 " style="font-weight: 500; color: var(--custom-orange-color)">
+                                            Total
+                                            power consumption: <b class="rangeOutput text-black-50"
+                                                id="rangeOutput0"></b>
+                                            (W)</p>
 
-        <section class="contentSection productsContents container-fluid px-sm-0" style="padding-top: 84.9px;">
-            <div class="">
-                <div class="productsContentsWrapper overflow-hidden">
+                                        <input type="range" name="totalPowerConsumption(W)" id="" min="0" max="194"
+                                            value="194" step="1" class="w-100 rangeInput">
 
-                    <div class="productsSidebar flex-shrink-0 h-100"
-                        style="overflow-y: scroll; scrollbar-width: thin; background: rgba(238, 238, 238, 1); width: 100% !important;">
+                                    </label>
 
-                        <div class="Filter d-flex flex-column justify-content-start align-items-center">
-
-                            <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
-
-                                <label class="d-flex flex-column gap-3 py-3 px-2 overflow-hidden">
-                                    <p class="m-0 " style="font-weight: 500; color: var(--custom-orange-color)">Total
-                                        power consumption: <b class="rangeOutput text-black-50" id="rangeOutput0"></b>
-                                        (W)</p>
-
-                                    <input type="range" name="totalPowerConsumption(W)" id="" min="0" max="194"
-                                        value="194" step="1" class="w-100 rangeInput">
-
-                                </label>
-
-
-                            </div>
-
-                            <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
-
-                                <label class="d-flex flex-column gap-3 py-3 px-2 overflow-hidden">
-                                    <p class="m-0 " style="font-weight: 500; color: var(--custom-orange-color)">CRI: <b
-                                            class="rangeOutput text-black-50" id="rangeOutput1"></b> (Ra)</p>
-
-                                    <input type="range" name="cri(Ra)" id="" min="30" max="90" value="90" step="1"
-                                        class="w-100 rangeInput">
-
-                                </label>
-
-
-                            </div>
-
-                            <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
-
-                                <label class="d-flex flex-column gap-3 py-3 px-2 overflow-hidden">
-                                    <p class="m-0 " style="font-weight: 500; color: var(--custom-orange-color)">Fixture
-                                        luminous flux: <b class="rangeOutput text-black-50" id="rangeOutput2"></b> (lm)
-                                    </p>
-
-                                    <input type="range" name="fixtureLuminousFlux(lm)" id="" min="120" max="11750"
-                                        value="11750" step="1" class="w-100 rangeInput">
-
-                                </label>
-
-
-                            </div>
-
-                            <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
-
-                                <div
-                                    class="detailsToggler d-flex gap-2 align-items-center justify-content-start justify-content-sm-between py-3 px-2 overflow-hidden">
-                                    <p class="m-0 " style="font-weight: 500;">Colour temperature (K)</p>
-
-                                    <div class="">
-                                        <i class="viewDetails fa-solid fa-angle-right text-black-50"></i>
-                                        <i class="fa-solid fa-angle-down HideDetails d-none"></i>
-                                    </div>
 
                                 </div>
 
-                                <form action="#" class="detailsToggleAnimation details productsTypesMenus p-2 bg-white">
+                                <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">2700</p>
-                                        <input type="checkbox" name="colourTemperature(K)" value="2700"
-                                            class="d-none eachProductsTypesMenu">
+                                    <label class="d-flex flex-column gap-3 py-3 px-2 overflow-hidden">
+                                        <p class="m-0 " style="font-weight: 500; color: var(--custom-orange-color)">CRI:
+                                            <b class="rangeOutput text-black-50" id="rangeOutput1"></b> (Ra)</p>
+
+                                        <input type="range" name="cri(Ra)" id="" min="30" max="90" value="90" step="1"
+                                            class="w-100 rangeInput">
+
                                     </label>
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">3000</p>
-                                        <input type="checkbox" name="colourTemperature(K)" value="3000"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">4000</p>
-                                        <input type="checkbox" name="colourTemperature(K)" value="4000"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">6500</p>
-                                        <input type="checkbox" name="colourTemperature(K)" value="6500"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-
-                                    <div class="d-flex gap-1 flex-wrap justify-content-center py-2">
-                                        <button type="submit" class="btn MenusSubmitBtn">Done</button>
-                                        <button type="reset" class="btn MenusResetBtn">Reset</button>
-                                    </div>
-
-
-
-                                </form>
-
-                            </div>
-
-                            <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
-
-                                <div
-                                    class="detailsToggler d-flex gap-2 align-items-center justify-content-start justify-content-sm-between py-3 px-2 overflow-hidden">
-                                    <p class="m-0 " style="font-weight: 500;">Ambient / Decorative</p>
-
-                                    <div class="">
-                                        <i class="viewDetails fa-solid fa-angle-right text-black-50"></i>
-                                        <i class="fa-solid fa-angle-down HideDetails d-none"></i>
-                                    </div>
 
                                 </div>
 
-                                <form action="#" class="detailsToggleAnimation details productsTypesMenus p-2 bg-white">
+                                <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Accessory</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="accessory"
-                                            class="d-none eachProductsTypesMenu">
+                                    <label class="d-flex flex-column gap-3 py-3 px-2 overflow-hidden">
+                                        <p class="m-0 " style="font-weight: 500; color: var(--custom-orange-color)">
+                                            Fixture
+                                            luminous flux: <b class="rangeOutput text-black-50" id="rangeOutput2"></b>
+                                            (lm)
+                                        </p>
+
+                                        <input type="range" name="fixtureLuminousFlux(lm)" id="" min="120" max="11750"
+                                            value="11750" step="1" class="w-100 rangeInput">
+
                                     </label>
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Compact Fluorescent</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="compactFluorescent"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Controls</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="controls"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Fluorescent</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="fluorescent"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">HID</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="hid"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">LED</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="led"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">SylSmart</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="sylSmart"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">TS</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="ts"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <div class="d-flex gap-1 flex-wrap justify-content-center py-2">
-                                        <button type="submit" class="btn MenusSubmitBtn">Done</button>
-                                        <button type="reset" class="btn MenusResetBtn">Reset</button>
-                                    </div>
-
-
-
-                                </form>
-
-                            </div>
-
-                            <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
-
-                                <div
-                                    class="detailsToggler d-flex gap-2 align-items-center justify-content-start justify-content-sm-between py-3 px-2 overflow-hidden">
-                                    <p class="m-0 " style="font-weight: 500;">Downlights</p>
-
-                                    <div class="">
-                                        <i class="viewDetails fa-solid fa-angle-right text-black-50"></i>
-                                        <i class="fa-solid fa-angle-down HideDetails d-none"></i>
-                                    </div>
 
                                 </div>
 
-                                <form action="#" class="detailsToggleAnimation details productsTypesMenus p-2 bg-white">
+                                <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Accessory</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="accessory"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
+                                    <div
+                                        class="detailsToggler d-flex gap-2 align-items-center justify-content-start justify-content-sm-between py-3 px-2 overflow-hidden">
+                                        <p class="m-0 " style="font-weight: 500;">Colour temperature (K)</p>
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Compact Fluorescent</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="compactFluorescent"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
+                                        <div class="">
+                                            <i class="viewDetails fa-solid fa-angle-right text-black-50"></i>
+                                            <i class="fa-solid fa-angle-down HideDetails d-none"></i>
+                                        </div>
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">LED LumiNature</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="ledLumiNature"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Fluorescent</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="fluorescent"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">HID</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="hid"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">LED</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="led"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">LED (5 step SDCM)</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="led(5stepSDCM)"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">TS</p>
-                                        <input type="checkbox" name="Ambient/DecorativeMenus" value="ts"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <div class="d-flex gap-1 flex-wrap justify-content-center py-2">
-                                        <button type="submit" class="btn MenusSubmitBtn">Done</button>
-                                        <button type="reset" class="btn MenusResetBtn">Reset</button>
                                     </div>
 
+                                    <form action="#"
+                                        class="detailsToggleAnimation details productsTypesMenus p-2 bg-white">
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">2700</p>
+                                            <input type="checkbox" name="colourTemperature(K)" value="2700"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">3000</p>
+                                            <input type="checkbox" name="colourTemperature(K)" value="3000"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">4000</p>
+                                            <input type="checkbox" name="colourTemperature(K)" value="4000"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">6500</p>
+                                            <input type="checkbox" name="colourTemperature(K)" value="6500"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
 
 
-                                </form>
+                                        <div class="d-flex gap-1 flex-wrap justify-content-center py-2">
+                                            <button type="submit" class="btn MenusSubmitBtn">Done</button>
+                                            <button type="reset" class="btn MenusResetBtn">Reset</button>
+                                        </div>
 
-                            </div>
 
-                            <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
 
-                                <div
-                                    class="detailsToggler d-flex gap-2 align-items-center justify-content-start justify-content-sm-between py-3 px-2 overflow-hidden">
-                                    <p class="m-0 " style="font-weight: 500;">Recessed Spotlights</p>
-
-                                    <div class="">
-                                        <i class="viewDetails fa-solid fa-angle-right text-black-50"></i>
-                                        <i class="fa-solid fa-angle-down HideDetails d-none"></i>
-                                    </div>
+                                    </form>
 
                                 </div>
 
-                                <form action="#" class="detailsToggleAnimation details productsTypesMenus p-2 bg-white">
+                                <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Accessory</p>
-                                        <input type="checkbox" name="recessedSpotlights" value="accessory"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
+                                    <div
+                                        class="detailsToggler d-flex gap-2 align-items-center justify-content-start justify-content-sm-between py-3 px-2 overflow-hidden">
+                                        <p class="m-0 " style="font-weight: 500;">Ambient / Decorative</p>
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Halogen</p>
-                                        <input type="checkbox" name="recessedSpotlights" value="halogen"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
+                                        <div class="">
+                                            <i class="viewDetails fa-solid fa-angle-right text-black-50"></i>
+                                            <i class="fa-solid fa-angle-down HideDetails d-none"></i>
+                                        </div>
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">LED/Halogen</p>
-                                        <input type="checkbox" name="recessedSpotlights" value="led/Halogen"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">HID</p>
-                                        <input type="checkbox" name="recessedSpotlights" value="hid"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">LED</p>
-                                        <input type="checkbox" name="recessedSpotlights" value="led"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <div class="d-flex gap-1 flex-wrap justify-content-center py-2">
-                                        <button type="submit" class="btn MenusSubmitBtn">Done</button>
-                                        <button type="reset" class="btn MenusResetBtn">Reset</button>
                                     </div>
 
+                                    <form action="#"
+                                        class="detailsToggleAnimation details productsTypesMenus p-2 bg-white">
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Accessory</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="accessory"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Compact Fluorescent</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus"
+                                                value="compactFluorescent" class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Controls</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="controls"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Fluorescent</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="fluorescent"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">HID</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="hid"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">LED</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="led"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">SylSmart</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="sylSmart"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">TS</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="ts"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <div class="d-flex gap-1 flex-wrap justify-content-center py-2">
+                                            <button type="submit" class="btn MenusSubmitBtn">Done</button>
+                                            <button type="reset" class="btn MenusResetBtn">Reset</button>
+                                        </div>
 
 
-                                </form>
 
-                            </div>
-
-                            <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
-
-                                <div
-                                    class="detailsToggler d-flex gap-2 align-items-center justify-content-start justify-content-sm-between py-3 px-2 overflow-hidden">
-                                    <p class="m-0 " style="font-weight: 500;">Batten</p>
-
-                                    <div class="">
-                                        <i class="viewDetails fa-solid fa-angle-right text-black-50"></i>
-                                        <i class="fa-solid fa-angle-down HideDetails d-none"></i>
-                                    </div>
+                                    </form>
 
                                 </div>
 
-                                <form action="#" class="detailsToggleAnimation details productsTypesMenus p-2 bg-white">
+                                <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Accessory</p>
-                                        <input type="checkbox" name="batten" value="accessory"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
+                                    <div
+                                        class="detailsToggler d-flex gap-2 align-items-center justify-content-start justify-content-sm-between py-3 px-2 overflow-hidden">
+                                        <p class="m-0 " style="font-weight: 500;">Downlights</p>
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">Fluorescent</p>
-                                        <input type="checkbox" name="batten" value="fluorescent"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
+                                        <div class="">
+                                            <i class="viewDetails fa-solid fa-angle-right text-black-50"></i>
+                                            <i class="fa-solid fa-angle-down HideDetails d-none"></i>
+                                        </div>
 
-                                    <label
-                                        class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
-                                        <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                        <p class="m-0 " style="font-weight: 500;">LED</p>
-                                        <input type="checkbox" name="batten" value="led"
-                                            class="d-none eachProductsTypesMenu">
-                                    </label>
-
-                                    <div class="d-flex gap-1 flex-wrap justify-content-center py-2">
-                                        <button type="submit" class="btn MenusSubmitBtn">Done</button>
-                                        <button type="reset" class="btn MenusResetBtn">Reset</button>
                                     </div>
 
+                                    <form action="#"
+                                        class="detailsToggleAnimation details productsTypesMenus p-2 bg-white">
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Accessory</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="accessory"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Compact Fluorescent</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus"
+                                                value="compactFluorescent" class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">LED LumiNature</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="ledLumiNature"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Fluorescent</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="fluorescent"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">HID</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="hid"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">LED</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="led"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">LED (5 step SDCM)</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="led(5stepSDCM)"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">TS</p>
+                                            <input type="checkbox" name="Ambient/DecorativeMenus" value="ts"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <div class="d-flex gap-1 flex-wrap justify-content-center py-2">
+                                            <button type="submit" class="btn MenusSubmitBtn">Done</button>
+                                            <button type="reset" class="btn MenusResetBtn">Reset</button>
+                                        </div>
 
 
-                                </form>
+
+                                    </form>
+
+                                </div>
+
+                                <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
+
+                                    <div
+                                        class="detailsToggler d-flex gap-2 align-items-center justify-content-start justify-content-sm-between py-3 px-2 overflow-hidden">
+                                        <p class="m-0 " style="font-weight: 500;">Recessed Spotlights</p>
+
+                                        <div class="">
+                                            <i class="viewDetails fa-solid fa-angle-right text-black-50"></i>
+                                            <i class="fa-solid fa-angle-down HideDetails d-none"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <form action="#"
+                                        class="detailsToggleAnimation details productsTypesMenus p-2 bg-white">
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Accessory</p>
+                                            <input type="checkbox" name="recessedSpotlights" value="accessory"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Halogen</p>
+                                            <input type="checkbox" name="recessedSpotlights" value="halogen"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">LED/Halogen</p>
+                                            <input type="checkbox" name="recessedSpotlights" value="led/Halogen"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">HID</p>
+                                            <input type="checkbox" name="recessedSpotlights" value="hid"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">LED</p>
+                                            <input type="checkbox" name="recessedSpotlights" value="led"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <div class="d-flex gap-1 flex-wrap justify-content-center py-2">
+                                            <button type="submit" class="btn MenusSubmitBtn">Done</button>
+                                            <button type="reset" class="btn MenusResetBtn">Reset</button>
+                                        </div>
+
+
+
+                                    </form>
+
+                                </div>
+
+                                <div class="eachProductsType eachContent w-100 pb-1 d-flex flex-column">
+
+                                    <div
+                                        class="detailsToggler d-flex gap-2 align-items-center justify-content-start justify-content-sm-between py-3 px-2 overflow-hidden">
+                                        <p class="m-0 " style="font-weight: 500;">Batten</p>
+
+                                        <div class="">
+                                            <i class="viewDetails fa-solid fa-angle-right text-black-50"></i>
+                                            <i class="fa-solid fa-angle-down HideDetails d-none"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <form action="#"
+                                        class="detailsToggleAnimation details productsTypesMenus p-2 bg-white">
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Accessory</p>
+                                            <input type="checkbox" name="batten" value="accessory"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">Fluorescent</p>
+                                            <input type="checkbox" name="batten" value="fluorescent"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <label
+                                            class="eachContent w-100 eachProductsTypesMenuWrapper d-flexWrapper d-flex gap-1 align-items-center p-2">
+                                            <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                            <p class="m-0 " style="font-weight: 500;">LED</p>
+                                            <input type="checkbox" name="batten" value="led"
+                                                class="d-none eachProductsTypesMenu">
+                                        </label>
+
+                                        <div class="d-flex gap-1 flex-wrap justify-content-center py-2">
+                                            <button type="submit" class="btn MenusSubmitBtn">Done</button>
+                                            <button type="reset" class="btn MenusResetBtn">Reset</button>
+                                        </div>
+
+
+
+                                    </form>
+
+                                </div>
 
                             </div>
-
                         </div>
                     </div>
+                    <div class="col-12 col-md-10 col-lg-10 productsContentsWrapper">
+                        <div class="h-100 no-scrollbar pt-4 overflow-hidden" style="overflow-y: scroll !important;">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4  g-2">
 
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="asset/images/productsTypes/1.webp" class="products-img" alt="...">
+                                        <div class="card-body">
+                                            <h6 class="card-title">FUEVA 5 surface mounted lights</h6>
+                                            <div class="mt-4">
+                                                <a href="#"><button class="product-buy-btn"><i
+                                                            class="fa-solid fa-cart-shopping pe-2"></i>Buy
+                                                        Now</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="asset/images/productsTypes/2.webp" class="products-img" alt="...">
+                                        <div class="card-body">
+                                            <h6 class="card-title">FUEVA 5 surface mounted lights</h6>
+                                            <div class="mt-4">
+                                                <a href="#"><button class="product-buy-btn"><i
+                                                            class="fa-solid fa-cart-shopping pe-2"></i>Buy
+                                                        Now</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="asset/images/productsTypes/3.webp" class="products-img" alt="...">
+                                        <div class="card-body">
+                                            <h6 class="card-title">FUEVA 5 surface mounted lights</h6>
+                                            <div class="mt-4">
+                                                <a href="#"><button class="product-buy-btn"><i
+                                                            class="fa-solid fa-cart-shopping pe-2"></i>Buy
+                                                        Now</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="asset/images/productsTypes/4.webp" class="products-img" alt="...">
+                                        <div class="card-body">
+                                            <h6 class="card-title">FUEVA 5 surface mounted lights</h6>
+                                            <div class="mt-4">
+                                                <a href="#"><button class="product-buy-btn"><i
+                                                            class="fa-solid fa-cart-shopping pe-2"></i>Buy
+                                                        Now</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="asset/images/productsTypes/5.webp" class="products-img" alt="...">
+                                        <div class="card-body">
+                                            <h6 class="card-title">FUEVA 5 surface mounted lights</h6>
+                                            <div class="mt-4">
+                                                <a href="#"><button class="product-buy-btn"><i
+                                                            class="fa-solid fa-cart-shopping pe-2"></i>Buy
+                                                        Now</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div class="h-100 no-scrollbar pt-4 ps-2 pe-2" style="overflow-y: scroll;">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="asset/images/productsTypes/1.webp" class="products-img" alt="...">
-                                    <div class="card-body">
-                                        <h6 class="card-title">FUEVA 5 surface mounted lights</h6>
-                                        <div class="mt-4">
-                                            <a href="#"><button class="product-buy-btn"><i
-                                                        class="fa-solid fa-cart-shopping pe-2"></i>Buy Now</button></a>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="asset/images/productsTypes/2.webp" class="products-img" alt="...">
-                                    <div class="card-body">
-                                        <h6 class="card-title">FUEVA 5 surface mounted lights</h6>
-                                        <div class="mt-4">
-                                            <a href="#"><button class="product-buy-btn"><i
-                                                        class="fa-solid fa-cart-shopping pe-2"></i>Buy Now</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="asset/images/productsTypes/3.webp" class="products-img" alt="...">
-                                    <div class="card-body">
-                                        <h6 class="card-title">FUEVA 5 surface mounted lights</h6>
-                                        <div class="mt-4">
-                                            <a href="#"><button class="product-buy-btn"><i
-                                                        class="fa-solid fa-cart-shopping pe-2"></i>Buy Now</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="asset/images/productsTypes/4.webp" class="products-img" alt="...">
-                                    <div class="card-body">
-                                        <h6 class="card-title">FUEVA 5 surface mounted lights</h6>
-                                        <div class="mt-4">
-                                            <a href="#"><button class="product-buy-btn"><i
-                                                        class="fa-solid fa-cart-shopping pe-2"></i>Buy Now</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="asset/images/productsTypes/5.webp" class="products-img" alt="...">
-                                    <div class="card-body">
-                                        <h6 class="card-title">FUEVA 5 surface mounted lights</h6>
-                                        <div class="mt-4">
-                                            <a href="#"><button class="product-buy-btn"><i
-                                                        class="fa-solid fa-cart-shopping pe-2"></i>Buy Now</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-
                     </div>
-
-
-
                 </div>
             </div>
         </section>
-
-
-
-
-
-
 
 
         <!-- Search Bar Modal -->

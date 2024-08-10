@@ -136,6 +136,7 @@ main section {
 
 .active {
   color: #f47a20 !important;
+  font-weight: 600 !important;
 }
 
 .navbar-show-bg {
@@ -860,16 +861,19 @@ button {
   border: 1px solid rgb(145, 145, 145);
 }
 
+.categories-products-img{
+  height: 280px;
+  object-fit: cover;
+}
+
+
+
 /* contents */
 
 .productsContents {
   max-width: 1400px !important;
 }
 
-.productsContentsWrapper {
-  display: flex;
-  flex-direction: column;
-}
 
 @media (min-width: 576px) {
   .productsContentsWrapper {

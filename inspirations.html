@@ -1,556 +1,430 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inspirations - Influx Technology</title>
-    <link rel="stylesheet" href="asset/css/style.css" />
 
-    <!-- EXTERNAL CSS LINK -->
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspirations - Influx Technology</title>
+  <link rel="stylesheet" href="asset/css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- OWL Carousel -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- AOS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-  </head>
+  <!-- EXTERNAL CSS LINK -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-  <body class="d-flex flex-column h-100">
-    <!------------------------------>
-    <!-- Header Start -->
-    <!------------------------------>
-    <header class="main-header position-fixed w-100">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- OWL Carousel -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
 
-      <div class="navbar-show-bg">
-          <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="container d-flex gap-3  p-0">
-                      <a class="navbar-brand" href="index.html" style="width: fit-content;">
-                          <img id="logo" src="asset/images/logo.svg" alt="" class="mx-3" style="width: 150px;">
-                      </a>
-                  <button class="navbar-toggler focus" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                      aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav mx-auto align-items-center justify-content-between gap-3">
-                          <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="company.html">COMPANY</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="products.html">PRODUCTS</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link active" href="inspirations.html">INSPIRATIONS</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="applications.html">APPLICATIONS</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="news.html">NEWS</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="service.html">SERVICE</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="contact.html">CONTACT</a>
-                          </li>
-                          <li class="nav-item">
-                              <!-- Button trigger modal -->
-                              <button type="button" class="search-btn ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 rounded-0" style="background: #ededed;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                  <i class="fa-solid fa-magnifying-glass"></i> 
-                                  Search
-                              </button>
-                          </li>
+<body class="d-flex flex-column h-100">
+  <!------------------------------>
+  <!-- Header Start -->
+  <!------------------------------>
+  <header class="main-header position-fixed w-100">
 
-                      </ul>
+    <div class="navbar-show-bg">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex gap-3  p-0">
+          <a class="navbar-brand" href="index.html" style="width: fit-content;">
+            <img id="logo" src="asset/images/logo.svg" alt="" class="mx-3" style="width: 150px;">
+          </a>
+          <button class="navbar-toggler focus" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto align-items-center justify-content-between gap-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="company.html">COMPANY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="inspirations.html">INSPIRATIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="applications.html">APPLICATIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">SERVICE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+                <button type="button" class="search-btn ps-lg-4 pe-lg-4 ps-md-3 pe-md-3 rounded-0"
+                  style="background: #ededed;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  Search
+                </button>
+              </li>
+
+            </ul>
 
 
-                  </div>
-              </div>
-          </nav>
-      </div>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
-    <!------------------------------>
-    <!-- Header End  -->
-    <!------------------------------>
+  <!------------------------------>
+  <!-- Header End  -->
+  <!------------------------------>
 
-    <main class="flex-shrink-0">
-      <!--  HEADER AND FOOTER COPY HERE -->
+  <main class="flex-shrink-0">
+    <!--  HEADER AND FOOTER COPY HERE -->
 
-      <!-- hero section -->
+    <!-- hero section -->
 
-      <section class="hero container-fluid p-0">
-        <div
-          class="wrapper heroWrapper"
-          style="
+    <section class="hero container-fluid p-0">
+      <div class="wrapper heroWrapper" style="
             background: url(./asset/images/hero-images/inspirations.jpg);
             height: auto;
-          "
-        >
-          <div
-            class="heroTitleWrapper w-100 h-100 gap-4 px-2"
-            style="padding-block: 5rem"
-          >
-            <div
-              class="my-3 mx-auto row flex-column align-items-end"
-              style="width: fit-content"
-            >
-              <h1 class="heroTitle text-center">All Inspirations</h1>
-              <img
-                src="./asset/images/titleUnderline.svg"
-                alt=" "
-                class=""
-                style="width: 5.5rem"
-              />
-            </div>
-
-            <form
-              action="#"
-              class="d-flex flex-wrap gap-5 justify-content-center p-4"
-            >
-              <label
-                for=""
-                class="text-white d-flex flex-column gap-1"
-                style="width: 200px"
-              >
-                <span class="text-white col">APPLICATION</span>
-                <select
-                  name="application"
-                  id=" application"
-                  class="searchOptions col"
-                >
-                  <option value="all">ALL</option>
-                  <option value="factory">Factory</option>
-                  <option value="cleaning room">Cleaning room</option>
-                  <option value="road light">Road light</option>
-                  <option value="stadium">Stadium</option>
-                  <option value="hotel">Hotel</option>
-                  <option value="underwater">Underwater</option>
-                  <option value="stairs">Stairs</option>
-                  <option value="warehouse">Warehouse</option>
-                  <option value="garden">Garden</option>
-                </select>
-              </label>
-
-              <label
-                for=""
-                class="text-white d-flex flex-column gap-1"
-                style="width: 200px"
-              >
-                <span class="text-white col">PRODUCT</span>
-                <select
-                  name="product"
-                  id=" product"
-                  class="searchOptions col"
-                >
-                  <option value="all">ALL</option>
-                  <option value="panel light">Panel light</option>
-                  <option value="bulk head">Bulk head</option>
-                  <option value="high bay light">High bay light</option>
-                  <option value="low bay light">Low bay light</option>
-                  <option value="street light">Street light</option>
-                  <option value="flood light">Flood light</option>
-                  <option value="stair riser light">Stair riser light</option>
-                  <option value="recessed light">Recessed light</option>
-                  <option value="under-water strip light">
-                    Under-water strip light
-                  </option>
-                  <option value="emergency exit light">
-                    Emergency exit light
-                  </option>
-                  <option value="battery backup">Battery backup</option>
-                  <option value="insect killer lamp">Insect killer lamp</option>
-                  <option value="under-water light">Under-water light</option>
-                </select>
-              </label>
-
-              <label
-                for=""
-                class="text-white d-flex flex-column gap-1"
-                style="width: 200px"
-              >
-                <span class="text-white col">LOCATION</span>
-                <select
-                  name="location"
-                  id=" location"
-                  class="searchOptions col"
-                >
-                  <option value="all">ALL</option>
-                  <option value="district">District</option>
-                  <option value="district">District</option>
-                  <option value="district">District</option>
-                </select>
-              </label>
-            </form>
+          ">
+        <div class="heroTitleWrapper w-100 h-100 gap-4 px-2" style="padding-block: 5rem">
+          <div class="my-3 mx-auto row flex-column align-items-end" style="width: fit-content">
+            <h1 class="heroTitle text-center">All Inspirations</h1>
+            <img src="./asset/images/titleUnderline.svg" alt=" " class="" style="width: 5.5rem" />
           </div>
+
+          <form action="#" class="d-flex flex-wrap gap-5 justify-content-center p-4">
+            <label for="" class="text-white d-flex flex-column gap-1" style="width: 200px">
+              <span class="text-white col">APPLICATION</span>
+              <select name="application" id=" application" class="searchOptions col">
+                <option value="all">ALL</option>
+                <option value="factory">Factory</option>
+                <option value="cleaning room">Cleaning room</option>
+                <option value="road light">Road light</option>
+                <option value="stadium">Stadium</option>
+                <option value="hotel">Hotel</option>
+                <option value="underwater">Underwater</option>
+                <option value="stairs">Stairs</option>
+                <option value="warehouse">Warehouse</option>
+                <option value="garden">Garden</option>
+              </select>
+            </label>
+
+            <label for="" class="text-white d-flex flex-column gap-1" style="width: 200px">
+              <span class="text-white col">PRODUCT</span>
+              <select name="product" id=" product" class="searchOptions col">
+                <option value="all">ALL</option>
+                <option value="panel light">Panel light</option>
+                <option value="bulk head">Bulk head</option>
+                <option value="high bay light">High bay light</option>
+                <option value="low bay light">Low bay light</option>
+                <option value="street light">Street light</option>
+                <option value="flood light">Flood light</option>
+                <option value="stair riser light">Stair riser light</option>
+                <option value="recessed light">Recessed light</option>
+                <option value="under-water strip light">
+                  Under-water strip light
+                </option>
+                <option value="emergency exit light">
+                  Emergency exit light
+                </option>
+                <option value="battery backup">Battery backup</option>
+                <option value="insect killer lamp">Insect killer lamp</option>
+                <option value="under-water light">Under-water light</option>
+              </select>
+            </label>
+
+            <label for="" class="text-white d-flex flex-column gap-1" style="width: 200px">
+              <span class="text-white col">LOCATION</span>
+              <select name="location" id=" location" class="searchOptions col">
+                <option value="all">ALL</option>
+                <option value="district">District</option>
+                <option value="district">District</option>
+                <option value="district">District</option>
+              </select>
+            </label>
+          </form>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- contents section -->
+    <!-- contents section -->
 
-      <section class="contentSection">
-        <div class="container">
-          <div class="inspirations row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
-            <div class="eachInspirations position-relative">
-              <div
-                class="backgroundImageAdjust w-100 h-100"
-                style="
-                  background-image: url(./asset/images/inspirationsPageContent-images/0.jpg);
-                "
-              >
-                <div
-                  class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3"
-                >
-                  <a href="#" class="visitBtn"> OFFICE </a>
+    <section class="contentSection">
+      <div class="container">
+        <div class="inspirations row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+          <div class="eachInspirations position-relative">
+            <div class="backgroundImageAdjust w-100 h-100" style="
+                  background-image: url(./asset/images/inspirationsPageContent-images/1.jpg);
+                ">
+              <div class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3">
+                <a href="#" class="visitBtn"> OFFICE </a>
 
-                  <div class="d-flex flex-column gap-1">
-                    <h5 class="text-white m-0">Colorcon Office Light</h5>
-                    <span class="text-white"
-                      >Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
-                      TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
-                    </span>
-                  </div>
+                <div class="d-flex flex-column gap-1">
+                  <h5 class="text-white m-0">Colorcon Office Light</h5>
+                  <span class="text-white">Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
+                    TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
+                  </span>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div
-              class="eachInspirations position-relative"
-            >
-              <div
-                class="backgroundImageAdjust w-100 h-100"
-                style="
-                  background-image: url(./asset/images/inspirationsPageContent-images/0.jpg);
-                "
-              >
-                <div
-                  class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3"
-                >
-                  <a href="#" class="visitBtn"> Factory </a>
+          <div class="eachInspirations position-relative">
+            <div class="backgroundImageAdjust w-100 h-100" style="
+                  background-image: url(./asset/images/inspirationsPageContent-images/2.jpg);
+                ">
+              <div class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3">
+                <a href="#" class="visitBtn"> Factory </a>
 
-                  <div class="d-flex flex-column gap-1">
-                    <h5 class="text-white m-0">EDCL Street Light</h5>
-                    <span class="text-white"
-                      >Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
-                      TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
-                    </span>
-                  </div>
+                <div class="d-flex flex-column gap-1">
+                  <h5 class="text-white m-0">EDCL Street Light</h5>
+                  <span class="text-white">Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
+                    TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
+                  </span>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div
-              class="eachInspirations position-relative"
-            >
-              <div
-                class="backgroundImageAdjust w-100 h-100"
-                style="
-                  background-image: url(./asset/images/inspirationsPageContent-images/0.jpg);
-                "
-              >
-                <div
-                  class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3"
-                >
-                  <a href="#" class="visitBtn"> Office </a>
+          <div class="eachInspirations position-relative">
+            <div class="backgroundImageAdjust w-100 h-100" style="
+                  background-image: url(./asset/images/inspirationsPageContent-images/3.jpg);
+                ">
+              <div class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3">
+                <a href="#" class="visitBtn"> Office </a>
 
-                  <div class="d-flex flex-column gap-1">
-                    <h5 class="text-white m-0">
-                      System Engineering Ltd. Office Light
-                    </h5>
-                    <span class="text-white"
-                      >Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
-                      TECTON, PANOS infinity/evolution, LINCOR, RESCLITE
-                      PRO</span
-                    >
-                  </div>
+                <div class="d-flex flex-column gap-1">
+                  <h5 class="text-white m-0">
+                    System Engineering Ltd. Office Light
+                  </h5>
+                  <span class="text-white">Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
+                    TECTON, PANOS infinity/evolution, LINCOR, RESCLITE
+                    PRO</span>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div
-              class="eachInspirations position-relative"
-            >
-              <div
-                class="backgroundImageAdjust w-100 h-100"
-                style="
-                  background-image: url(./asset/images/inspirationsPageContent-images/0.jpg);
-                "
-              >
-                <div
-                  class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3"
-                >
-                  <a href="#" class="visitBtn"> Garden </a>
+          <div class="eachInspirations position-relative">
+            <div class="backgroundImageAdjust w-100 h-100" style="
+                  background-image: url(./asset/images/inspirationsPageContent-images/4.jpg);
+                ">
+              <div class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3">
+                <a href="#" class="visitBtn"> Garden </a>
 
-                  <div class="d-flex flex-column gap-1">
-                    <h5 class="text-white m-0">EDCL Garden Light</h5>
-                    <span class="text-white"
-                      >Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
-                      TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
-                    </span>
-                  </div>
+                <div class="d-flex flex-column gap-1">
+                  <h5 class="text-white m-0">EDCL Garden Light</h5>
+                  <span class="text-white">Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
+                    TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
+                  </span>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div
-              class="eachInspirations position-relative"
-            >
-              <div
-                class="backgroundImageAdjust w-100 h-100"
-                style="
-                  background-image: url(./asset/images/inspirationsPageContent-images/0.jpg);
-                "
-              >
-                <div
-                  class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3"
-                >
-                  <a href="#" class="visitBtn"> Factory </a>
+          <div class="eachInspirations position-relative">
+            <div class="backgroundImageAdjust w-100 h-100" style="
+                  background-image: url(./asset/images/inspirationsPageContent-images/5.jpg);
+                ">
+              <div class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3">
+                <a href="#" class="visitBtn"> Factory </a>
 
-                  <div class="d-flex flex-column gap-1">
-                    <h5 class="text-white m-0">
-                      Opsonin Pharma Warehouse Light
-                    </h5>
-                    <span class="text-white"
-                      >Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
-                      TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
-                    </span>
-                  </div>
+                <div class="d-flex flex-column gap-1">
+                  <h5 class="text-white m-0">
+                    Opsonin Pharma Warehouse Light
+                  </h5>
+                  <span class="text-white">Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
+                    TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
+                  </span>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div
-              class="eachInspirations position-relative"
-            >
-              <div
-                class="backgroundImageAdjust w-100 h-100"
-                style="
-                  background-image: url(./asset/images/inspirationsPageContent-images/0.jpg);
-                "
-              >
-                <div
-                  class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3"
-                >
-                  <a href="#" class="visitBtn"> Stairs </a>
+          <div class="eachInspirations position-relative">
+            <div class="backgroundImageAdjust w-100 h-100" style="
+                  background-image: url(./asset/images/inspirationsPageContent-images/6.jpg);
+                ">
+              <div class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3">
+                <a href="#" class="visitBtn"> Stairs </a>
 
-                  <div class="d-flex flex-column gap-1">
-                    <h5 class="text-white m-0">Epyllion Stairs Light</h5>
-                    <span class="text-white"
-                      >Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
-                      TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
-                    </span>
-                  </div>
+                <div class="d-flex flex-column gap-1">
+                  <h5 class="text-white m-0">Epyllion Stairs Light</h5>
+                  <span class="text-white">Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
+                    TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
+                  </span>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div
-              class="eachInspirations position-relative"
-            >
-              <div
-                class="backgroundImageAdjust w-100 h-100"
-                style="
-                  background-image: url(./asset/images/inspirationsPageContent-images/0.jpg);
-                "
-              >
-                <div
-                  class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3"
-                >
-                  <a href="#" class="visitBtn"> Factory </a>
+          <div class="eachInspirations position-relative">
+            <div class="backgroundImageAdjust w-100 h-100" style="
+                  background-image: url(./asset/images/inspirationsPageContent-images/7.jpg);
+                ">
+              <div class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3">
+                <a href="#" class="visitBtn"> Factory </a>
 
-                  <div class="d-flex flex-column gap-1">
-                    <h5 class="text-white m-0">Epyllion BBT Light</h5>
-                    <span class="text-white"
-                      >Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
-                      TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
-                    </span>
-                  </div>
+                <div class="d-flex flex-column gap-1">
+                  <h5 class="text-white m-0">Epyllion BBT Light</h5>
+                  <span class="text-white">Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
+                    TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
+                  </span>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div
-              class="eachInspirations position-relative"
-            >
-              <div
-                class="backgroundImageAdjust w-100 h-100"
-                style="
+          <div class="eachInspirations position-relative">
+            <div class="backgroundImageAdjust w-100 h-100" style="
                   background-image: url(./asset/images/inspirationsPageContent-images/0.jpg);
-                "
-              >
-                <div
-                  class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3"
-                >
-                  <a href="#" class="visitBtn"> Factory </a>
+                ">
+              <div class="eachInspirationsWrapper d-flex flex-column justify-content-between p-3">
+                <a href="#" class="visitBtn"> Factory </a>
 
-                  <div class="d-flex flex-column gap-1">
-                    <h5 class="text-white m-0">PC10 TCPL Bogura Light</h5>
-                    <span class="text-white"
-                      >Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
-                      TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
-                    </span>
-                  </div>
+                <div class="d-flex flex-column gap-1">
+                  <h5 class="text-white m-0">PC10 TCPL Bogura Light</h5>
+                  <span class="text-white">Products: TUBILUX, PERLUCE, SLOTLIGHT infinit slim,
+                    TECTON, PANOS infinity/evolution, LINCOR, RESCLITE PRO
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <!-- Support Section -->
 
     <div class="container mt-5 mb-5">
       <div class="headline-title">
-          <h3 class="section-headline">NEED SUPPORT</h3>
+        <h3 class="section-headline">NEED SUPPORT</h3>
       </div>
 
       <div class="text-center bg-light support-section mt-3">
-          <div class="row">
-              <div class="col-12 col-md-4 p-3">
-                  <i class="fa-regular fa-clock support-sec-icon"></i>
-                  <p class="h6">OUR OPENING HOUR</p>
-                  <p>
-                      SATURDAY TO THURSDAY <br />
-                      (09:00 AM - 06:00 PM)
-                  </p>
-                  <p></p>
-              </div>
-              <div class="col-12 col-md-4 p-3">
-                  <i class="fa-solid fa-envelope support-sec-icon"></i>
-                  <p class="h6">EMAIL</p>
-                  <p>info@influxbn.com</p>
-              </div>
-              <div class="col-12 col-md-4 p-3">
-                  <i class="fa-solid fa-phone support-sec-icon"></i>
-                  <p class="h6">PHONE</p>
-                  <p>+88 01711-293193</p>
-              </div>
+        <div class="row">
+          <div class="col-12 col-md-4 p-3">
+            <i class="fa-regular fa-clock support-sec-icon"></i>
+            <p class="h6">OUR OPENING HOUR</p>
+            <p>
+              SATURDAY TO THURSDAY <br />
+              (09:00 AM - 06:00 PM)
+            </p>
+            <p></p>
           </div>
+          <div class="col-12 col-md-4 p-3">
+            <i class="fa-solid fa-envelope support-sec-icon"></i>
+            <p class="h6">EMAIL</p>
+            <p>info@influxbn.com</p>
+          </div>
+          <div class="col-12 col-md-4 p-3">
+            <i class="fa-solid fa-phone support-sec-icon"></i>
+            <p class="h6">PHONE</p>
+            <p>+88 01711-293193</p>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
 
     <!-- Search Bar Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header border-0">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Search here</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <form class="example" action="">
-                      <div class="src-bar">
-                          <input class="search-bar" type="text" placeholder="Search.." name="search" onkeyup="filterFunction()">
-                          <i class="fa fa-search p-3"></i>
-                      </div>
-                  </form>
-                  <div class="searchBarProductsWrapper container-fluid d-flex flex-column pt-3 gap-3">
-
-                      <b class="searchResults" style="color: var(--custom-orange-color);"></b>
-
-                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
-                          <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
-                          <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
-
-                      </a>
-
-                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
-                          <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
-                          <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
-
-                      </a>
-
-                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
-                          <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
-                          <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
-
-                      </a>
-
-                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
-                          <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
-                          <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
-
-                      </a>
-
-                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
-                          <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
-                          <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
-
-                      </a>
-
-                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
-                          <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
-                          <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
-
-                      </a>
-
-                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
-                          <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
-                          <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
-
-                      </a>
-
-                      <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
-                          <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
-                          <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
-
-                      </a>
-                  </div>
-              </div>
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Search here</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <div class="modal-body">
+            <form class="example" action="">
+              <div class="src-bar">
+                <input class="search-bar" type="text" placeholder="Search.." name="search" onkeyup="filterFunction()">
+                <i class="fa fa-search p-3"></i>
+              </div>
+            </form>
+            <div class="searchBarProductsWrapper container-fluid d-flex flex-column pt-3 gap-3">
+
+              <b class="searchResults" style="color: var(--custom-orange-color);"></b>
+
+              <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+              </a>
+
+              <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
+                <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+              </a>
+
+              <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+              </a>
+
+              <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
+                <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+              </a>
+
+              <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+              </a>
+
+              <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
+                <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+              </a>
+
+              <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                <img src="./asset/images/productDetailsPageImages/0.png" alt="" class="searchBarProductImage ">
+                <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+              </a>
+
+              <a href="ProductDetails.html" class="searchBarProduct p-1 border rounded-3">
+                <img src="./asset/images/productsTypes/0.png" alt="" class="searchBarProductImage">
+                <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
 
   </main>
 
@@ -596,19 +470,13 @@
               <a href=""><i class="fa-brands fa-facebook social-icon"></i></a>
             </div>
             <div class="icon-box">
-              <a href=""
-                ><i class="fa-brands fa-instagram social-icon"></i
-              ></a>
+              <a href=""><i class="fa-brands fa-instagram social-icon"></i></a>
             </div>
             <div class="icon-box">
-              <a href=""
-                ><i class="fa-brands fa-linkedin-in social-icon"></i
-              ></a>
+              <a href=""><i class="fa-brands fa-linkedin-in social-icon"></i></a>
             </div>
             <div class="icon-box">
-              <a href=""
-                ><i class="fa-brands fa-x-twitter social-icon"></i
-              ></a>
+              <a href=""><i class="fa-brands fa-x-twitter social-icon"></i></a>
             </div>
           </div>
         </div>
@@ -622,13 +490,9 @@
         <p>
           Develop By - <br />
           <a target="_blank" href="https://www.ositsltd.com/">
-            <img
-              style="width: 30px; margin-right: 5px"
-              src="https://www.ositsltd.com/media/logo/logo_K6FFJzc.png"
-              alt=""
-            />
-            OS IT Solutions Ltd.</a
-          >
+            <img style="width: 30px; margin-right: 5px" src="https://www.ositsltd.com/media/logo/logo_K6FFJzc.png"
+              alt="" />
+            OS IT Solutions Ltd.</a>
         </p>
       </div>
     </div>
